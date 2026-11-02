@@ -1,0 +1,31 @@
+{
+  "config": {
+    "honorBonus": 0.03
+  },
+  "items": [
+    {
+      "id": "joint-staff",
+      "name": "Joint staff",
+      "description": "Another doctrine slot, kept through every Transfer.",
+      "kind": "doctrineSlot",
+      "maxLevel": 1,
+      "costs": [4]
+    },
+    {
+      "id": "reserve-fleet",
+      "name": "Reserve fleet",
+      "description": "An extra strike group beyond the ones each theatre grants.",
+      "kind": "group",
+      "maxLevel": 2,
+      "costs": [3, 8]
+    },
+    {
+      "id": "flag-command",
+      "name": "Flag command",
+      "description": "+1 Command capacity for every strike group per level.",
+      "kind": "command",
+      "maxLevel": 4,
+      "costs": [2, 3, 5, 8]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+ "unlockEarned": 1000,
+ "commandCapacity": 10,
+ "maxGroups": 6,
+ "queueLimit": 8,
+ "slips": {
+  "base": 1,
+  "costs": [
+   25000,
+   600000,
+   15000000
+  ]
+ },
+ "rowWeights": {
+  "front": 3,
+  "line": 2,
+  "rear": 1
+ },
+ "ranks": [
+  {
+   "id": "green",
+   "name": "Green",
+   "xp": 0,
+   "bonus": 0
+  },
+  {
+   "id": "regular",
+   "name": "Regular",
+   "xp": 3,
+   "bonus": 0.08
+  },
+  {
+   "id": "veteran",
+   "name": "Veteran",
+   "xp": 12,
+   "bonus": 0.18
+  },
+  {
+   "id": "elite",
+   "name": "Elite",
+   "xp": 40,
+   "bonus": 0.3
+  }
+ ],
+ "xp": {
+  "win": 3,
+  "loss": 1
+ },
+ "sortie": {
+  "deutPerCommand": 2,
+  "restSeconds": 8
+ },
+ "repair": {
+  "fieldPerSecond": 0.01,
+  "reservePerSecond": 0.04
+ },
+ "integrityPresets": [
+  0.5,
+  0.7,
+  0.9
+ ],
+ "failStreakLimit": 3,
+ "sectorBonus": 0.03,
+ "storage": {
+  "ti": 200000,
+  "deut": 20000,
+  "salvage": 3000
+ },
+ "offline": {
+  "samples": 24,
+  "minWinRate": 0.85
+ },
+ "battleSpeeds": [
+  1,
+  2,
+  4
+ ],
+ "firstClearMult": 3,
+ "sectorsPerCommand": 2,
+ "cadre": {
+  "share": 0.5,
+  "cap": 12
+ },
+ "lateTheatreCommand": 6,
+ "theatreStorage": {
+  "ti": [
+   1,
+   1,
+   25,
+   1000,
+   30000
+  ],
+  "salvage": [
+   1,
+   1,
+   5,
+   12,
+   30
+  ]
+ }
+}

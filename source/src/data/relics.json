@@ -1,0 +1,8 @@
+[
+ {"id":"lattice","name":"Forerunner lattice","description":"A grid of hard light that wakes the fleet's industry.","effect":"production","perLevel":0.06,"label":"Requisition output","costs":[200,800,3000,12000,40000]},
+ {"id":"hardlight","name":"Hardlight plating","description":"Plates that remember their shape. Ships take the hits better.","effect":"hull","perLevel":0.05,"label":"ship hull","costs":[250,1000,3500,14000,45000]},
+ {"id":"slipdrive","name":"Slipspace drive","description":"Campaign victories pay out in Requisition and Titanium faster than they should.","effect":"reward","perLevel":0.05,"label":"Campaign rewards","costs":[300,1200,4000,16000,50000]},
+ {"id":"beam","name":"Sentinel beam","description":"An unfamiliar weapon the Covenant call a heresy.","effect":"damage","perLevel":0.05,"label":"ship damage","costs":[350,1400,4500,18000,55000]},
+ {"id":"cartographer","name":"Cartographer","description":"A map of every vault and depot. Stockpiles hold more.","effect":"storage","perLevel":0.1,"label":"storage","costs":[150,600,2500,10000,35000]},
+ {"id":"index","name":"Librarian's index","description":"Tactical records no marine ever had to learn the hard way.","effect":"marine","perLevel":0.05,"label":"marine Power","costs":[300,1200,4000,16000,50000]}
+]

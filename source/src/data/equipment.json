@@ -1,0 +1,71 @@
+[
+  {
+    "id": "mac",
+    "name": "MAC cannon",
+    "slot": "weapon",
+    "type": "kinetic",
+    "reach": "long",
+    "shots": 1,
+    "damage": 220,
+    "cooldown": 8,
+    "pen": 0.6,
+    "accuracy": 0.85,
+    "mac": true,
+    "blurb": "Few, heavy shots from long range. Bites through armour, weak against shields."
+  },
+  {
+    "id": "archer",
+    "name": "Archer missile pod",
+    "slot": "weapon",
+    "type": "explosive",
+    "reach": "medium",
+    "shots": 6,
+    "damage": 35,
+    "cooldown": 5,
+    "pen": 0.2,
+    "accuracy": 0.9,
+    "missile": true,
+    "blurb": "A salvo of six missiles at medium range. Good against shields. Point defence can shoot them down."
+  },
+  {
+    "id": "autocannon",
+    "name": "Autocannon battery",
+    "slot": "weapon",
+    "type": "kinetic",
+    "reach": "close",
+    "shots": 10,
+    "damage": 12,
+    "cooldown": 2,
+    "pen": 0,
+    "accuracy": 0.8,
+    "blurb": "A hail of rounds at point-blank range. Thick armour shrugs it off."
+  },
+  {
+    "id": "pd",
+    "name": "Point defence",
+    "slot": "defence",
+    "pd": 1,
+    "blurb": "Flak and chain guns that stop incoming missiles, on this ship and (less well) its neighbours."
+  },
+  {
+    "id": "plating",
+    "name": "Ablative plating",
+    "slot": "defence",
+    "armourMult": 1.4,
+    "blurb": "Adds 40% armour. Shrugs off small hits."
+  },
+  {
+    "id": "bulkheads",
+    "name": "Reinforced bulkheads",
+    "slot": "utility",
+    "hullMult": 1.15,
+    "blurb": "Adds 15% hull."
+  },
+  {
+    "id": "uplink",
+    "name": "Targeting uplink",
+    "slot": "utility",
+    "damageMult": 1.1,
+    "blurb": "Shares sensor data across the group: +10% damage from this ship."
+  }
+]

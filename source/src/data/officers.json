@@ -1,0 +1,9 @@
+[
+ {"id":"varga","name":"Cmdr. Ilsa Varga","title":"Gunnery officer","blurb":"Drilled every gun crew until they stopped flinching.","unlock":"t1-n4","effects":[{"kind":"damage","amount":0.08}]},
+ {"id":"okonkwo","name":"Capt. Dmitri Okonkwo","title":"Damage control","blurb":"Has never lost a ship he could still reach with a welding rig.","unlock":"t1-n8","effects":[{"kind":"hull","amount":0.1},{"kind":"repair","amount":0.25}]},
+ {"id":"rao","name":"Lt. Cmdr. Priya Rao","title":"Helm and fire control","blurb":"Weapons cycle faster when she is on the bridge.","unlock":"t2-n4","effects":[{"kind":"cooldown","amount":0.08}]},
+ {"id":"lindqvist","name":"Adm. Tomas Lindqvist","title":"Fleet logistics","blurb":"Gets the same sortie out of two thirds of the fuel.","unlock":"t2-n8","effects":[{"kind":"sortie","amount":0.25},{"kind":"damage","amount":0.04}]},
+ {"id":"aoki","name":"Cmdr. Jun Aoki","title":"Shield specialist","blurb":"Taught the fleet to fight inside its own cover.","unlock":"t3-n4","effects":[{"kind":"shield","amount":0.06},{"kind":"hull","amount":0.06}]},
+ {"id":"marsh","name":"Fleet Adm. Helena Marsh","title":"Fleet commander","blurb":"The kind of presence that makes every ship fire a little harder.","unlock":"t3-n8","effects":[{"kind":"damage","amount":0.12},{"kind":"hull","amount":0.08}]},
+ {"id":"echo","name":"Echo","title":"Smart AI core","blurb":"A fragment recovered from a vault on the Ark. It thinks faster than the enemy can aim.","unlock":"t5-n8","effects":[{"kind":"damage","amount":0.15},{"kind":"cooldown","amount":0.1}]}
+]

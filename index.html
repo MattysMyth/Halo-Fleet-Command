@@ -1,0 +1,92 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Fleet Command Source</title>
+<style>
+:root {
+  /* Layout: one narrow reading column, a status block, a restore block, a file index. */
+  --bg: #f3f4f1;
+  --panel: #ffffff;
+  --fg: #1b2420;
+  --muted: #5d6a62;
+  --line: #d5dad4;
+  --amber: #a8620a;
+  --good: #3d7a1f;
+  --font-display: 'Big Shoulders Stencil Display', 'Impact', 'Arial Narrow', sans-serif;
+  --font-body: 'Barlow', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d1210; --panel: #141b18; --fg: #e3e9e0; --muted: #92a095; --line: #28342e; --amber: #f0a63c; --good: #9ccb6a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d1210; --panel: #141b18; --fg: #e3e9e0; --muted: #92a095; --line: #28342e; --amber: #f0a63c; --good: #9ccb6a;
+  color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 16px; line-height: 1.5; padding-inline: 16px; padding-block: 28px 48px; font-variant-numeric: tabular-nums; }
+main { max-width: 720px; margin-inline: auto; display: flex; flex-direction: column; gap: 22px; }
+h1 { font-family: var(--font-display); font-weight: 800; font-size: 2.1rem; letter-spacing: 0.01em; margin: 0; text-wrap: balance; }
+h2 { font-family: var(--font-display); font-weight: 800; font-size: 1.25rem; letter-spacing: 0.02em; text-transform: uppercase; color: var(--amber); margin: 0 0 8px; }
+p, ul, ol { margin: 0; }
+section { background: var(--panel); border: 1px solid var(--line); padding: 16px 18px; min-width: 0; }
+.lede { color: var(--muted); }
+ul, ol { padding-left: 1.2rem; display: flex; flex-direction: column; gap: 4px; }
+code, pre { font-family: var(--font-mono); font-size: 0.88rem; }
+pre { margin: 8px 0 0; padding: 12px; border: 1px solid var(--line); overflow-x: auto; background: var(--bg); }
+.row { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+.stat { display: flex; flex-direction: column; min-width: 0; }
+.stat b { font-family: var(--font-display); font-size: 1.7rem; font-weight: 800; }
+.stat span { color: var(--muted); font-size: 0.85rem; }
+.ok { color: var(--good); }
+a { color: var(--amber); }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Big+Shoulders+Stencil+Display:wght@700;800&display=swap">
+<main>
+  <header>
+    <h1>Fleet Command Source</h1>
+    <p class="lede">Work-in-progress source for Halo Fleet Command, saved so work can resume after a reset. The playable build is a separate artifact.</p>
+  </header>
+
+  <section>
+    <h2>Checkpoint 15</h2>
+    <div class="row">
+      <div class="stat"><b class="ok">351</b><span>unit tests passing</span></div>
+      <div class="stat"><b>78</b><span>files in source/</span></div>
+      <div class="stat"><b>v4</b><span>save format</span></div>
+    </div>
+    <p style="margin-top:10px">Phases 0 to 3 are done (build 0.3 is the live playable artifact). Phase 4 is under way: 4.1 (research tree, doctrines, Salvage, save format v4) and 4.2 (heavy cruiser, Boarding actions, Defend counter-attacks) are done, and 4.3 is built: Theatre 2 (Inner Colonies), the Transfer prestige layer with Battle Honors and the War Room, and a Campaign screen. Left: review and build 0.4. Read PROGRESS.md for the details.</p>
+  </section>
+
+  <section>
+    <h2>Restore</h2>
+    <ol>
+      <li>Download the files under <code>source/</code> into a new folder.</li>
+      <li>Rename <code>index.html.txt</code> to <code>index.html</code>.</li>
+      <li>Read <code>PROGRESS.md</code> for the full status and the decisions made so far.</li>
+    </ol>
+    <pre>npm ci
+npm run typecheck
+npm test</pre>
+  </section>
+
+  <section>
+    <h2>Where things are</h2>
+    <ul>
+      <li><code>src/sim/combat.ts</code> the pure battle simulator</li>
+      <li><code>src/sim/fleet.ts</code> drydock, groups, sorties, repairs, offline Patrol</li>
+      <li><code>src/sim/marines.ts</code> squads, missions, tactics, casualties, positions</li>
+      <li><code>src/sim/research.ts</code>, <code>modifiers.ts</code> research projects, doctrines and the bonuses they fold into</li>
+      <li><code>src/sim/world.ts</code> economy, fleet and marines stepped together</li>
+      <li><code>src/data/*.json</code> every number the game uses</li>
+      <li><code>src/ui/fleet.tsx</code> the Fleet screen: battle view, drydock, sectors</li>
+      <li><code>src/ui/operations.tsx</code> the Operations screen: squads, mission view, positions</li>
+      <li><code>src/ui/research.tsx</code> the Research screen; <code>src/data/research.json</code> its content</li>
+      <li><code>tools/combat-probe.ts</code> win-rate table for sample fleets against each node</li>
+      <li><code>tools/odds-probe.ts</code> squad odds by loadout against each position</li>
+      <li><code>tools/e2e/</code> browser harness with sample saves</li>
+    </ul>
+  </section>
+</main>
+
+</body></html>

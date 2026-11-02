@@ -1,0 +1,1098 @@
+{
+ "units": [
+  {
+   "id": "marine",
+   "name": "Marine",
+   "role": "Rifleman backbone",
+   "blurb": "Standard issue rifle, standard issue luck.",
+   "cost": 1,
+   "stats": {
+    "firepower": 10,
+    "grit": 10,
+    "tactics": 5
+   },
+   "unlock": {
+    "kind": "start"
+   }
+  },
+  {
+   "id": "marksman",
+   "name": "Marksman",
+   "role": "Long-range damage",
+   "blurb": "Scoped battle rifle and the patience to use it.",
+   "cost": 2,
+   "stats": {
+    "firepower": 18,
+    "grit": 8,
+    "tactics": 8
+   },
+   "unlock": {
+    "kind": "node",
+    "node": "t1-n3"
+   }
+  },
+  {
+   "id": "corpsman",
+   "name": "Corpsman",
+   "role": "Field medic",
+   "blurb": "Keeps the wounded breathing until the Pelican arrives.",
+   "cost": 2,
+   "stats": {
+    "firepower": 4,
+    "grit": 12,
+    "tactics": 10
+   },
+   "medic": true,
+   "unlock": {
+    "kind": "node",
+    "node": "t1-n6"
+   }
+  },
+  {
+   "id": "odst",
+   "name": "ODST",
+   "role": "Orbital shock trooper",
+   "blurb": "Drops from orbit with an SMG, a grudge and a very short briefing.",
+   "cost": 3,
+   "stats": {
+    "firepower": 26,
+    "grit": 18,
+    "tactics": 13
+   },
+   "unlock": {
+    "kind": "node",
+    "node": "t2-n2"
+   }
+  },
+  {
+   "id": "spartan",
+   "name": "Spartan",
+   "role": "Augmented super-soldier",
+   "blurb": "Worth a platoon on their own. The paperwork to prove it is classified.",
+   "cost": 6,
+   "stats": {
+    "firepower": 55,
+    "grit": 40,
+    "tactics": 22
+   },
+   "unlock": {
+    "kind": "node",
+    "node": "t2-n6"
+   }
+  }
+ ],
+ "vehicles": [
+  {
+   "id": "warthog",
+   "name": "Warthog",
+   "blurb": "Light and fast. Gets the squad round the back of the enemy.",
+   "cost": {
+    "rp": 3000,
+    "ti": 120
+   },
+   "power": 60,
+   "tactics": 4,
+   "casualty": 1,
+   "flank": true,
+   "unlock": {
+    "kind": "node",
+    "node": "t1-n2"
+   }
+  },
+  {
+   "id": "hornet",
+   "name": "Hornet",
+   "blurb": "Air cover over the squad. Fewer marines hit, less ground gained.",
+   "cost": {
+    "rp": 28000,
+    "ti": 420
+   },
+   "power": 95,
+   "tactics": 2,
+   "casualty": 0.8,
+   "flank": false,
+   "unlock": {
+    "kind": "node",
+    "node": "t1-n4"
+   }
+  },
+  {
+   "id": "scorpion",
+   "name": "Scorpion",
+   "blurb": "A main battle tank. Slow, loud and very hard to argue with.",
+   "cost": {
+    "rp": 160000,
+    "ti": 1200
+   },
+   "power": 170,
+   "tactics": 0,
+   "casualty": 0.9,
+   "flank": false,
+   "unlock": {
+    "kind": "node",
+    "node": "t1-n5"
+   }
+  }
+ ],
+ "ranks": [
+  {
+   "id": "private",
+   "name": "Private",
+   "short": "Pvt",
+   "xp": 0,
+   "power": 0
+  },
+  {
+   "id": "corporal",
+   "name": "Corporal",
+   "short": "Cpl",
+   "xp": 8,
+   "power": 0.1
+  },
+  {
+   "id": "sergeant",
+   "name": "Sergeant",
+   "short": "Sgt",
+   "xp": 24,
+   "power": 0.2
+  },
+  {
+   "id": "gunnery",
+   "name": "Gunnery Sergeant",
+   "short": "GySgt",
+   "xp": 60,
+   "power": 0.35
+  }
+ ],
+ "perks": [
+  {
+   "id": "sharpshooter",
+   "name": "Sharpshooter",
+   "blurb": "+10% own Power.",
+   "rank": 1,
+   "effect": {
+    "power": 0.1
+   }
+  },
+  {
+   "id": "cover",
+   "name": "Cover discipline",
+   "blurb": "25% less likely to become a casualty.",
+   "rank": 1,
+   "effect": {
+    "casualty": 0.75
+   }
+  },
+  {
+   "id": "leader",
+   "name": "Fire team leader",
+   "blurb": "+5% squad Power while ready.",
+   "rank": 2,
+   "effect": {
+    "aura": 0.05
+   }
+  },
+  {
+   "id": "tough",
+   "name": "Tough as boots",
+   "blurb": "Casualties are wounds, never deaths.",
+   "rank": 2,
+   "effect": {
+    "wounded": 1
+   }
+  },
+  {
+   "id": "veteran",
+   "name": "Veteran instincts",
+   "blurb": "+25% experience.",
+   "rank": 3,
+   "effect": {
+    "xp": 1.25
+   }
+  },
+  {
+   "id": "iron",
+   "name": "Iron will",
+   "blurb": "Recovers from wounds in half the time.",
+   "rank": 3,
+   "effect": {
+    "recovery": 0.5
+   }
+  }
+ ],
+ "tactics": [
+  {
+   "id": "aggressive",
+   "name": "Aggressive",
+   "blurb": "Press the attack. More power, more casualties.",
+   "power": 1.25,
+   "casualty": 1.5,
+   "time": 1
+  },
+  {
+   "id": "methodical",
+   "name": "Methodical",
+   "blurb": "Bound by bound. Slower, far fewer casualties.",
+   "power": 0.85,
+   "casualty": 0.4,
+   "time": 1.4
+  },
+  {
+   "id": "flank",
+   "name": "Flank",
+   "blurb": "Needs a Warthog and a sharp squad. Without them it backfires.",
+   "power": 1.4,
+   "casualty": 1,
+   "time": 1
+  },
+  {
+   "id": "orbital",
+   "name": "Orbital support",
+   "blurb": "A fleet on Support orders drops rounds on the position. Costs Deuterium.",
+   "power": 1.9,
+   "casualty": 0.8,
+   "time": 1
+  }
+ ],
+ "missions": [
+  {
+   "id": "patrol",
+   "name": "Patrol sweep",
+   "blurb": "Walk the ground, clear what you find. The default auto-deploy.",
+   "stages": [
+    {
+     "name": "Move out",
+     "threat": 0.8,
+     "tacticsReq": 5
+    },
+    {
+     "name": "Contact",
+     "threat": 1,
+     "tacticsReq": 7
+    },
+    {
+     "name": "Mop up",
+     "threat": 1.2,
+     "tacticsReq": 8
+    }
+   ],
+   "seconds": 150,
+   "threat": 0.6,
+   "rewards": {
+    "rp": 1.6,
+    "intel": 1,
+    "xp": 1
+   },
+   "auto": true
+  },
+  {
+   "id": "recon",
+   "name": "Recon in force",
+   "blurb": "Probe the defences. Pays Intel, and every Recon makes the assault there easier this run.",
+   "stages": [
+    {
+     "name": "Infiltrate",
+     "threat": 0.9,
+     "tacticsReq": 6
+    },
+    {
+     "name": "Observe",
+     "threat": 1,
+     "tacticsReq": 8
+    },
+    {
+     "name": "Probe",
+     "threat": 1.1,
+     "tacticsReq": 9
+    },
+    {
+     "name": "Break contact",
+     "threat": 1.2,
+     "tacticsReq": 10
+    }
+   ],
+   "seconds": 360,
+   "threat": 1,
+   "rewards": {
+    "rp": 0.8,
+    "intel": 3,
+    "xp": 1.6
+   },
+   "auto": true
+  },
+  {
+   "id": "assault",
+   "name": "Assault position",
+   "blurb": "Take the ground the fleet cleared. A held position pays a permanent bonus.",
+   "stages": [
+    {
+     "name": "Drop zone",
+     "threat": 0.9,
+     "tacticsReq": 6
+    },
+    {
+     "name": "Perimeter",
+     "threat": 1,
+     "tacticsReq": 8
+    },
+    {
+     "name": "Strongpoint",
+     "threat": 1.2,
+     "tacticsReq": 9
+    },
+    {
+     "name": "Command post",
+     "threat": 1.3,
+     "tacticsReq": 10
+    },
+    {
+     "name": "Hold the line",
+     "threat": 1.1,
+     "tacticsReq": 8
+    }
+   ],
+   "seconds": 720,
+   "threat": 1.4,
+   "rewards": {
+    "rp": 8,
+    "intel": 5,
+    "xp": 3
+   },
+   "auto": false
+  },
+  {
+   "id": "hunter",
+   "name": "Hunter strike",
+   "blurb": "Hunt the Covenant's armoured elites on ground you already hold. Brutal, short, and it pays Salvage.",
+   "stages": [
+    {
+     "name": "Close the distance",
+     "threat": 1.0,
+     "tacticsReq": 8
+    },
+    {
+     "name": "Break the shield wall",
+     "threat": 1.3,
+     "tacticsReq": 10
+    },
+    {
+     "name": "Kill the Hunters",
+     "threat": 1.6,
+     "tacticsReq": 12
+    }
+   ],
+   "seconds": 420,
+   "threat": 1.2,
+   "rewards": {
+    "rp": 6,
+    "intel": 4,
+    "xp": 4
+   },
+   "auto": false
+  },
+  {
+   "id": "boarding",
+   "name": "Boarding action",
+   "blurb": "Board a beaten enemy ship before it drifts away. Pays Salvage, and sometimes a hull.",
+   "stages": [
+    {
+     "name": "Breach",
+     "threat": 0.9,
+     "tacticsReq": 6
+    },
+    {
+     "name": "Fight through the decks",
+     "threat": 1.1,
+     "tacticsReq": 8
+    },
+    {
+     "name": "Secure the bridge",
+     "threat": 1.2,
+     "tacticsReq": 9
+    }
+   ],
+   "seconds": 240,
+   "threat": 1,
+   "rewards": {
+    "rp": 3,
+    "intel": 2,
+    "xp": 2.5
+   },
+   "auto": false,
+   "incident": true
+  },
+  {
+   "id": "defend",
+   "name": "Defend position",
+   "blurb": "A held position is under counter-attack. Answer it, or the garrison fights alone.",
+   "stages": [
+    {
+     "name": "Hold the wall",
+     "threat": 0.9,
+     "tacticsReq": 6
+    },
+    {
+     "name": "Counter-charge",
+     "threat": 1.0,
+     "tacticsReq": 8
+    },
+    {
+     "name": "Rout",
+     "threat": 1.1,
+     "tacticsReq": 9
+    }
+   ],
+   "seconds": 300,
+   "threat": 1,
+   "rewards": {
+    "rp": 4,
+    "intel": 3,
+    "xp": 3
+   },
+   "auto": false,
+   "incident": true
+  }
+ ],
+ "positions": [
+  {
+   "node": "t1-n1",
+   "name": "Mining camp",
+   "blurb": "A shanty town round the ore haulers' dock.",
+   "threat": 60,
+   "garrison": 3,
+   "xpCap": 10,
+   "rpSeconds": 25,
+   "intel": 4,
+   "bonus": {
+    "kind": "rp",
+    "amount": 0.06
+   }
+  },
+  {
+   "node": "t1-n2",
+   "name": "Harvest granary",
+   "blurb": "Grain silos the Covenant scouts are using as a beacon.",
+   "threat": 85,
+   "garrison": 4,
+   "xpCap": 16,
+   "rpSeconds": 28,
+   "intel": 6,
+   "bonus": {
+    "kind": "ti",
+    "amount": 0.15
+   }
+  },
+  {
+   "node": "t1-n3",
+   "name": "Raider hideout",
+   "blurb": "Tunnels under the moon's frozen crust.",
+   "threat": 120,
+   "garrison": 6,
+   "xpCap": 24,
+   "rpSeconds": 30,
+   "intel": 9,
+   "bonus": {
+    "kind": "pers",
+    "amount": 0.15
+   }
+  },
+  {
+   "node": "t1-n4",
+   "name": "Convoy depot",
+   "blurb": "Where the stolen cargo is sorted and sold.",
+   "threat": 165,
+   "garrison": 8,
+   "xpCap": 36,
+   "rpSeconds": 32,
+   "intel": 14,
+   "bonus": {
+    "kind": "rp",
+    "amount": 0.08
+   }
+  },
+  {
+   "node": "t1-n5",
+   "name": "Lance outpost",
+   "blurb": "The mining outpost the destroyer was guarding.",
+   "threat": 220,
+   "garrison": 12,
+   "xpCap": 48,
+   "rpSeconds": 35,
+   "intel": 20,
+   "bonus": {
+    "kind": "deut",
+    "amount": 0.15
+   }
+  },
+  {
+   "node": "t1-n6",
+   "name": "Wreck field",
+   "blurb": "Scavengers picking a cruiser apart for plasma cores.",
+   "threat": 290,
+   "garrison": 16,
+   "xpCap": 60,
+   "rpSeconds": 38,
+   "intel": 30,
+   "bonus": {
+    "kind": "intel",
+    "amount": 0.2
+   }
+  },
+  {
+   "node": "t1-n7",
+   "name": "Raider muster",
+   "blurb": "Staging grounds for the raiding fleet's landing parties.",
+   "threat": 370,
+   "garrison": 24,
+   "xpCap": 60,
+   "rpSeconds": 42,
+   "intel": 45,
+   "bonus": {
+    "kind": "command",
+    "amount": 1
+   }
+  },
+  {
+   "node": "t1-n8",
+   "name": "Warlord's keep",
+   "blurb": "The fortress that ran the whole insurrection.",
+   "threat": 470,
+   "garrison": 40,
+   "xpCap": 60,
+   "rpSeconds": 50,
+   "intel": 70,
+   "bonus": {
+    "kind": "rp",
+    "amount": 0.15
+   }
+  },
+  {
+   "node": "t2-n1",
+   "name": "Harvest docks",
+   "blurb": "The orbital docks, now a Covenant landing field.",
+   "threat": 340,
+   "garrison": 28,
+   "xpCap": 60,
+   "rpSeconds": 60,
+   "intel": 90,
+   "bonus": {
+    "kind": "rp",
+    "amount": 0.08
+   }
+  },
+  {
+   "node": "t2-n2",
+   "name": "Carrion yard",
+   "blurb": "A wrecked convoy's cargo, claimed by Covenant salvage crews.",
+   "threat": 380,
+   "garrison": 32,
+   "xpCap": 60,
+   "rpSeconds": 70,
+   "intel": 110,
+   "bonus": {
+    "kind": "ti",
+    "amount": 0.2
+   }
+  },
+  {
+   "node": "t2-n3",
+   "name": "Signal mesa",
+   "blurb": "A relay tower the cruiser uses to talk to its fleet.",
+   "threat": 430,
+   "garrison": 36,
+   "xpCap": 60,
+   "rpSeconds": 80,
+   "intel": 130,
+   "bonus": {
+    "kind": "pers",
+    "amount": 0.2
+   }
+  },
+  {
+   "node": "t2-n4",
+   "name": "Gantry spine",
+   "blurb": "The half-built gantry's ground anchors.",
+   "threat": 480,
+   "garrison": 42,
+   "xpCap": 60,
+   "rpSeconds": 90,
+   "intel": 150,
+   "bonus": {
+    "kind": "rp",
+    "amount": 0.1
+   }
+  },
+  {
+   "node": "t2-n5",
+   "name": "Ring station",
+   "blurb": "A ring-side station the cruisers refuel from.",
+   "threat": 540,
+   "garrison": 48,
+   "xpCap": 60,
+   "rpSeconds": 100,
+   "intel": 175,
+   "bonus": {
+    "kind": "deut",
+    "amount": 0.2
+   }
+  },
+  {
+   "node": "t2-n6",
+   "name": "Envoy's court",
+   "blurb": "Where the Prophet's envoy holds his retinue.",
+   "threat": 600,
+   "garrison": 56,
+   "xpCap": 60,
+   "rpSeconds": 115,
+   "intel": 200,
+   "bonus": {
+    "kind": "intel",
+    "amount": 0.25
+   }
+  },
+  {
+   "node": "t2-n7",
+   "name": "Glass harbour",
+   "blurb": "The fused glass of the landing apron.",
+   "threat": 670,
+   "garrison": 64,
+   "xpCap": 60,
+   "rpSeconds": 130,
+   "intel": 230,
+   "bonus": {
+    "kind": "command",
+    "amount": 1
+   }
+  },
+  {
+   "node": "t2-n8",
+   "name": "Resolute's foundry",
+   "blurb": "The carrier's forward base on the surface.",
+   "threat": 750,
+   "garrison": 76,
+   "xpCap": 60,
+   "rpSeconds": 150,
+   "intel": 280,
+   "bonus": {
+    "kind": "rp",
+    "amount": 0.2
+   }
+  },
+  {
+   "node": "t3-n1",
+   "name": "Picket base",
+   "blurb": "Covenant forces dig in on the ground below the fleet.",
+   "threat": 800,
+   "garrison": 80,
+   "xpCap": 60,
+   "rpSeconds": 170,
+   "intel": 320,
+   "bonus": {
+    "kind": "rp",
+    "amount": 0.1
+   }
+  },
+  {
+   "node": "t3-n2",
+   "name": "Rampart ridge",
+   "blurb": "A defended ridge the fleet could not silence from orbit.",
+   "threat": 865,
+   "garrison": 92,
+   "xpCap": 60,
+   "rpSeconds": 190,
+   "intel": 380,
+   "bonus": {
+    "kind": "ti",
+    "amount": 0.2
+   }
+  },
+  {
+   "node": "t3-n3",
+   "name": "Cruiser shipyards",
+   "blurb": "A ground station the enemy fleet relies on.",
+   "threat": 930,
+   "garrison": 104,
+   "xpCap": 60,
+   "rpSeconds": 210,
+   "intel": 440,
+   "bonus": {
+    "kind": "pers",
+    "amount": 0.2
+   }
+  },
+  {
+   "node": "t3-n4",
+   "name": "Gantry anchor",
+   "blurb": "Fortified anchor points for the enemy's fleet.",
+   "threat": 995,
+   "garrison": 116,
+   "xpCap": 60,
+   "rpSeconds": 230,
+   "intel": 500,
+   "bonus": {
+    "kind": "rp",
+    "amount": 0.1
+   }
+  },
+  {
+   "node": "t3-n5",
+   "name": "Hangar block",
+   "blurb": "The ground crews who keep the enemy flying.",
+   "threat": 1060,
+   "garrison": 128,
+   "xpCap": 60,
+   "rpSeconds": 250,
+   "intel": 560,
+   "bonus": {
+    "kind": "deut",
+    "amount": 0.2
+   }
+  },
+  {
+   "node": "t3-n6",
+   "name": "Command deck",
+   "blurb": "Where the commanders direct the battle.",
+   "threat": 1125,
+   "garrison": 140,
+   "xpCap": 60,
+   "rpSeconds": 270,
+   "intel": 620,
+   "bonus": {
+    "kind": "intel",
+    "amount": 0.25
+   }
+  },
+  {
+   "node": "t3-n7",
+   "name": "Fleet landing",
+   "blurb": "The landing zones for the next wave.",
+   "threat": 1190,
+   "garrison": 152,
+   "xpCap": 60,
+   "rpSeconds": 290,
+   "intel": 680,
+   "bonus": {
+    "kind": "command",
+    "amount": 1
+   }
+  },
+  {
+   "node": "t3-n8",
+   "name": "Warlord's redoubt",
+   "blurb": "The enemy's ground command.",
+   "threat": 1255,
+   "garrison": 164,
+   "xpCap": 60,
+   "rpSeconds": 310,
+   "intel": 740,
+   "bonus": {
+    "kind": "rp",
+    "amount": 0.2
+   }
+  },
+  {
+   "node": "t4-n1",
+   "name": "Beacon spire",
+   "blurb": "Covenant forces dig in on the ground below the fleet.",
+   "threat": 1450,
+   "garrison": 110,
+   "xpCap": 60,
+   "rpSeconds": 340,
+   "intel": 640,
+   "bonus": {
+    "kind": "rp",
+    "amount": 0.1
+   }
+  },
+  {
+   "node": "t4-n2",
+   "name": "Hulk graveyard",
+   "blurb": "A defended ridge the fleet could not silence from orbit.",
+   "threat": 1550,
+   "garrison": 122,
+   "xpCap": 60,
+   "rpSeconds": 380,
+   "intel": 760,
+   "bonus": {
+    "kind": "ti",
+    "amount": 0.2
+   }
+  },
+  {
+   "node": "t4-n3",
+   "name": "Spore marsh",
+   "blurb": "A ground station the enemy fleet relies on.",
+   "threat": 1650,
+   "garrison": 134,
+   "xpCap": 60,
+   "rpSeconds": 420,
+   "intel": 880,
+   "bonus": {
+    "kind": "pers",
+    "amount": 0.2
+   }
+  },
+  {
+   "node": "t4-n4",
+   "name": "Gate plaza",
+   "blurb": "Fortified anchor points for the enemy's fleet.",
+   "threat": 1750,
+   "garrison": 146,
+   "xpCap": 60,
+   "rpSeconds": 460,
+   "intel": 1000,
+   "bonus": {
+    "kind": "rp",
+    "amount": 0.1
+   }
+  },
+  {
+   "node": "t4-n5",
+   "name": "Hive floor",
+   "blurb": "The ground crews who keep the enemy flying.",
+   "threat": 1850,
+   "garrison": 158,
+   "xpCap": 60,
+   "rpSeconds": 500,
+   "intel": 1120,
+   "bonus": {
+    "kind": "deut",
+    "amount": 0.2
+   }
+  },
+  {
+   "node": "t4-n6",
+   "name": "Guardian hall",
+   "blurb": "Where the commanders direct the battle.",
+   "threat": 1950,
+   "garrison": 170,
+   "xpCap": 60,
+   "rpSeconds": 540,
+   "intel": 1240,
+   "bonus": {
+    "kind": "intel",
+    "amount": 0.25
+   }
+  },
+  {
+   "node": "t4-n7",
+   "name": "Containment vault",
+   "blurb": "The landing zones for the next wave.",
+   "threat": 2050,
+   "garrison": 182,
+   "xpCap": 60,
+   "rpSeconds": 580,
+   "intel": 1360,
+   "bonus": {
+    "kind": "command",
+    "amount": 1
+   }
+  },
+  {
+   "node": "t4-n8",
+   "name": "Gravemind's lair",
+   "blurb": "The enemy's ground command.",
+   "threat": 2150,
+   "garrison": 194,
+   "xpCap": 60,
+   "rpSeconds": 620,
+   "intel": 1480,
+   "bonus": {
+    "kind": "rp",
+    "amount": 0.2
+   }
+  },
+  {
+   "node": "t5-n1",
+   "name": "Picket outpost",
+   "blurb": "Covenant forces dig in on the ground below the fleet.",
+   "threat": 2400,
+   "garrison": 140,
+   "xpCap": 60,
+   "rpSeconds": 510,
+   "intel": 960,
+   "bonus": {
+    "kind": "rp",
+    "amount": 0.1
+   }
+  },
+  {
+   "node": "t5-n2",
+   "name": "Sentinel fabricator",
+   "blurb": "A defended ridge the fleet could not silence from orbit.",
+   "threat": 2560,
+   "garrison": 152,
+   "xpCap": 60,
+   "rpSeconds": 570,
+   "intel": 1140,
+   "bonus": {
+    "kind": "ti",
+    "amount": 0.2
+   }
+  },
+  {
+   "node": "t5-n3",
+   "name": "Shield pylon",
+   "blurb": "A ground station the enemy fleet relies on.",
+   "threat": 2720,
+   "garrison": 164,
+   "xpCap": 60,
+   "rpSeconds": 630,
+   "intel": 1320,
+   "bonus": {
+    "kind": "pers",
+    "amount": 0.2
+   }
+  },
+  {
+   "node": "t5-n4",
+   "name": "Loyalist camp",
+   "blurb": "Fortified anchor points for the enemy's fleet.",
+   "threat": 2880,
+   "garrison": 176,
+   "xpCap": 60,
+   "rpSeconds": 690,
+   "intel": 1500,
+   "bonus": {
+    "kind": "rp",
+    "amount": 0.1
+   }
+  },
+  {
+   "node": "t5-n5",
+   "name": "Foundry floor",
+   "blurb": "The ground crews who keep the enemy flying.",
+   "threat": 3040,
+   "garrison": 188,
+   "xpCap": 60,
+   "rpSeconds": 750,
+   "intel": 1680,
+   "bonus": {
+    "kind": "deut",
+    "amount": 0.2
+   }
+  },
+  {
+   "node": "t5-n6",
+   "name": "Brute keep",
+   "blurb": "Where the commanders direct the battle.",
+   "threat": 3200,
+   "garrison": 200,
+   "xpCap": 60,
+   "rpSeconds": 810,
+   "intel": 1860,
+   "bonus": {
+    "kind": "intel",
+    "amount": 0.25
+   }
+  },
+  {
+   "node": "t5-n7",
+   "name": "Fire ring",
+   "blurb": "The landing zones for the next wave.",
+   "threat": 3360,
+   "garrison": 212,
+   "xpCap": 60,
+   "rpSeconds": 870,
+   "intel": 2040,
+   "bonus": {
+    "kind": "command",
+    "amount": 1
+   }
+  },
+  {
+   "node": "t5-n8",
+   "name": "Truth's throne",
+   "blurb": "The enemy's ground command.",
+   "threat": 3520,
+   "garrison": 224,
+   "xpCap": 60,
+   "rpSeconds": 930,
+   "intel": 2220,
+   "bonus": {
+    "kind": "rp",
+    "amount": 0.2
+   }
+  }
+ ],
+ "config": {
+  "storage": {
+   "pers": 2000,
+   "intel": 50000
+  },
+  "startingPersonnel": 6,
+  "unlockNode": "t1-n1",
+  "squadSlots": 6,
+  "squadBarracks": [
+   0,
+   1,
+   5,
+   15
+  ],
+  "win": {
+   "exponent": 2.2
+  },
+  "casualty": {
+   "base": 0.02,
+   "slope": 0.5,
+   "failMult": 1.6,
+   "wounded": 0.7,
+   "recoverySeconds": 90,
+   "medic": 0.85,
+   "medicCap": 2,
+   "floor": 0.3
+  },
+  "xp": {
+   "stage": 1,
+   "complete": 2
+  },
+  "briefSeconds": 12,
+  "restSeconds": 5,
+  "supportBonus": 0.1,
+  "activeBonus": 0.5,
+  "orbitalDeutPerCommand": 1,
+  "recon": {
+   "perScout": 0.15,
+   "cap": 0.3
+  },
+  "minReady": 4,
+  "autoMinWin": 0.8,
+  "incidents": {
+   "max": 3,
+   "boardingSeconds": 240,
+   "defendSeconds": 300,
+   "wreckBelow": 0.25,
+   "wrecksPerBattle": 2,
+   "boardChance": {
+    "campaign": 1,
+    "patrol": 0.5
+   },
+   "boardThreat": {
+    "base": 0.5,
+    "perCommand": 0.15
+   },
+   "boardSalvage": {
+    "base": 0.4,
+    "perCommand": 0.2
+   },
+   "hullChance": {
+    "base": 0.1,
+    "perCommand": 0.1,
+    "cap": 0.5
+   },
+   "hullClass": "frigate",
+   "hullShare": 0.4,
+   "defendEvery": [
+    900,
+    1800
+   ],
+   "defendThreat": 0.9,
+   "holdChance": 0.7,
+   "contestedSeconds": 900,
+   "overrunGarrisons": 2
+  },
+  "hunter": {
+   "salvageShare": 0.5
+  }
+ }
+}

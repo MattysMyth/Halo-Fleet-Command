@@ -1,0 +1,246 @@
+[
+  {
+    "id": "depot",
+    "name": "Supply Depot",
+    "blurb": "Crated rations and spares, shipped on the next convoy out.",
+    "icon": "depot",
+    "baseCost": 10,
+    "baseOutput": 0.2,
+    "unlock": {
+      "kind": "start"
+    }
+  },
+  {
+    "id": "hub",
+    "name": "Logistics Hub",
+    "blurb": "Sorts depot stock into one outbound manifest.",
+    "icon": "hub",
+    "baseCost": 120,
+    "baseOutput": 1.5,
+    "unlock": {
+      "kind": "owned",
+      "building": "depot",
+      "count": 5
+    }
+  },
+  {
+    "id": "charter",
+    "name": "Colony Charter",
+    "blurb": "A settled world that pays its tithe in requisition.",
+    "icon": "charter",
+    "baseCost": 1500,
+    "baseOutput": 11,
+    "unlock": {
+      "kind": "owned",
+      "building": "hub",
+      "count": 5
+    }
+  },
+  {
+    "id": "platform",
+    "name": "Orbital Platform",
+    "blurb": "Zero-g warehousing above a charter world.",
+    "icon": "platform",
+    "baseCost": 20000,
+    "baseOutput": 80,
+    "unlock": {
+      "kind": "owned",
+      "building": "charter",
+      "count": 5
+    }
+  },
+  {
+    "id": "yard",
+    "name": "Fleet Yard",
+    "blurb": "Gantries and slips that turn raw stock into hulls.",
+    "icon": "yard",
+    "baseCost": 280000,
+    "baseOutput": 600,
+    "unlock": {
+      "kind": "owned",
+      "building": "platform",
+      "count": 3
+    }
+  },
+  {
+    "id": "command",
+    "name": "Sector Command",
+    "blurb": "A standing headquarters that directs the whole sector's supply.",
+    "icon": "command",
+    "baseCost": 4000000,
+    "baseOutput": 4500,
+    "unlock": {
+      "kind": "owned",
+      "building": "yard",
+      "count": 3
+    }
+  },
+  {
+    "id": "outpost",
+    "name": "Surface Outpost",
+    "blurb": "Open-cast titanium diggings on a frontier world.",
+    "icon": "outpost",
+    "resource": "ti",
+    "baseCost": 60,
+    "baseOutput": 0.25,
+    "unlock": {
+      "kind": "owned",
+      "building": "hub",
+      "count": 2
+    }
+  },
+  {
+    "id": "mine",
+    "name": "Asteroid Mine",
+    "blurb": "Tugs and drills strip a rock down to ingots.",
+    "icon": "mine",
+    "resource": "ti",
+    "baseCost": 900,
+    "baseOutput": 2,
+    "unlock": {
+      "kind": "owned",
+      "building": "outpost",
+      "count": 5
+    }
+  },
+  {
+    "id": "smelter",
+    "name": "Orbital Smelter",
+    "blurb": "Solar-fed foundries pour titanium-A plate in orbit.",
+    "icon": "smelter",
+    "resource": "ti",
+    "baseCost": 14000,
+    "baseOutput": 16,
+    "unlock": {
+      "kind": "owned",
+      "building": "mine",
+      "count": 3
+    }
+  },
+  {
+    "id": "harvester",
+    "name": "Ice Harvester",
+    "blurb": "Cracks comet ice into deuterium fuel.",
+    "icon": "harvester",
+    "resource": "deut",
+    "baseCost": 100,
+    "baseOutput": 0.06,
+    "unlock": {
+      "kind": "owned",
+      "building": "hub",
+      "count": 3
+    }
+  },
+  {
+    "id": "refinery",
+    "name": "Fusion Refinery",
+    "blurb": "Bottles fuel for every ship in the sector.",
+    "icon": "refinery",
+    "resource": "deut",
+    "baseCost": 1400,
+    "baseOutput": 0.5,
+    "unlock": {
+      "kind": "owned",
+      "building": "harvester",
+      "count": 5
+    }
+  },
+  {
+    "id": "skimmer",
+    "name": "Gas Giant Skimmer",
+    "blurb": "A drop-tank factory floating in a storm band.",
+    "icon": "skimmer",
+    "resource": "deut",
+    "baseCost": 20000,
+    "baseOutput": 4,
+    "unlock": {
+      "kind": "owned",
+      "building": "refinery",
+      "count": 3
+    }
+  },
+  {
+    "id": "recruit",
+    "name": "Recruiting Station",
+    "blurb": "Volunteers queue round the block for a rifle and a bunk.",
+    "icon": "recruit",
+    "baseCost": 200,
+    "baseOutput": 0.03,
+    "resource": "pers",
+    "unlock": {
+      "kind": "owned",
+      "building": "hub",
+      "count": 4
+    }
+  },
+  {
+    "id": "academy",
+    "name": "Training Ground",
+    "blurb": "Eight weeks of mud turns a volunteer into a marine.",
+    "icon": "academy",
+    "baseCost": 3000,
+    "baseOutput": 0.3,
+    "resource": "pers",
+    "unlock": {
+      "kind": "owned",
+      "building": "recruit",
+      "count": 5
+    }
+  },
+  {
+    "id": "barracks",
+    "name": "Barracks Complex",
+    "blurb": "Bunks for a company, and a standing order to fill them.",
+    "icon": "barracks",
+    "baseCost": 20000,
+    "baseOutput": 0.8,
+    "resource": "pers",
+    "unlock": {
+      "kind": "owned",
+      "building": "academy",
+      "count": 3
+    }
+  },
+  {
+    "id": "listening",
+    "name": "Listening Post",
+    "blurb": "A dish on a ridge, hearing what the Covenant say to each other.",
+    "icon": "listening",
+    "baseCost": 400,
+    "baseOutput": 0.03,
+    "resource": "intel",
+    "unlock": {
+      "kind": "owned",
+      "building": "charter",
+      "count": 2
+    }
+  },
+  {
+    "id": "analysis",
+    "name": "Analysis Cell",
+    "blurb": "Analysts turn intercepts into maps.",
+    "icon": "analysis",
+    "baseCost": 6000,
+    "baseOutput": 0.35,
+    "resource": "intel",
+    "unlock": {
+      "kind": "owned",
+      "building": "listening",
+      "count": 5
+    }
+  },
+  {
+    "id": "bureau",
+    "name": "Intelligence Bureau",
+    "blurb": "A floor of desks, a wall of strings, and a very tired director.",
+    "icon": "bureau",
+    "baseCost": 90000,
+    "baseOutput": 3,
+    "resource": "intel",
+    "unlock": {
+      "kind": "owned",
+      "building": "analysis",
+      "count": 3
+    }
+  }
+]

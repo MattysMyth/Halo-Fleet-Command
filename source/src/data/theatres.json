@@ -1,0 +1,898 @@
+[
+ {
+  "id": 1,
+  "name": "Outer Colonies",
+  "blurb": "Raiders and insurrectionists strip the frontier worlds while the first Covenant scouts probe the edge of human space.",
+  "honors": 2,
+  "transferShip": "heavy-cruiser",
+  "nodes": [
+   {
+    "id": "t1-n1",
+    "name": "Skiff hunt",
+    "blurb": "Insurgent gunboats are shaking down the ore haulers.",
+    "enemies": {
+     "gunboat": 3
+    },
+    "scale": 3.4,
+    "reward": {
+     "rp": 120,
+     "ti": 60,
+     "salvage": 3
+    },
+    "patrol": {
+     "ti": 25,
+     "deut": 3,
+     "salvage": 1
+    },
+    "xpCap": 4
+   },
+   {
+    "id": "t1-n2",
+    "name": "Harvest picket",
+    "blurb": "Three Covenant corvettes watch the colony from the dark.",
+    "enemies": {
+     "corvette": 3
+    },
+    "scale": 1.9,
+    "reward": {
+     "rp": 500,
+     "ti": 120,
+     "salvage": 6
+    },
+    "patrol": {
+     "ti": 45,
+     "deut": 5,
+     "salvage": 2
+    },
+    "xpCap": 6
+   },
+   {
+    "id": "t1-n3",
+    "name": "Raider moon",
+    "blurb": "An insurgent hideout with gunboat cover and two corvettes on loan.",
+    "enemies": {
+     "gunboat": 4,
+     "corvette": 2
+    },
+    "scale": 4.4,
+    "reward": {
+     "rp": 1800,
+     "ti": 220,
+     "salvage": 12
+    },
+    "patrol": {
+     "ti": 80,
+     "deut": 8,
+     "salvage": 4
+    },
+    "xpCap": 9
+   },
+   {
+    "id": "t1-n4",
+    "name": "Convoy escort",
+    "blurb": "Insurgent frigates with missile racks hunt a supply convoy.",
+    "enemies": {
+     "raider-frigate": 4,
+     "gunboat": 2
+    },
+    "scale": 2.0,
+    "reward": {
+     "rp": 6000,
+     "ti": 380,
+     "salvage": 20
+    },
+    "patrol": {
+     "ti": 130,
+     "deut": 12,
+     "salvage": 7
+    },
+    "xpCap": 12
+   },
+   {
+    "id": "t1-n5",
+    "name": "Lance outpost",
+    "blurb": "A lone destroyer with corvette pickets guards a mining outpost.",
+    "enemies": {
+     "destroyer": 1,
+     "corvette": 4
+    },
+    "scale": 7.7,
+    "reward": {
+     "rp": 20000,
+     "ti": 650,
+     "salvage": 32
+    },
+    "patrol": {
+     "ti": 220,
+     "deut": 18,
+     "salvage": 11
+    },
+    "xpCap": 18
+   },
+   {
+    "id": "t1-n6",
+    "name": "Salvage run",
+    "blurb": "Two destroyers strip a wrecked cruiser for plasma cores.",
+    "enemies": {
+     "destroyer": 2,
+     "corvette": 4
+    },
+    "scale": 6.1,
+    "reward": {
+     "rp": 65000,
+     "ti": 1100,
+     "salvage": 50
+    },
+    "patrol": {
+     "ti": 380,
+     "deut": 26,
+     "salvage": 17
+    },
+    "xpCap": 26
+   },
+   {
+    "id": "t1-n7",
+    "name": "Forward fleet",
+    "blurb": "The raiding fleet musters at the system edge.",
+    "enemies": {
+     "destroyer": 3,
+     "corvette": 3
+    },
+    "scale": 10.0,
+    "reward": {
+     "rp": 210000,
+     "ti": 1900,
+     "salvage": 80
+    },
+    "patrol": {
+     "ti": 650,
+     "deut": 38,
+     "salvage": 27
+    },
+    "xpCap": 40
+   },
+   {
+    "id": "t1-n8",
+    "name": "Raider vanguard",
+    "blurb": "The destroyer pack that has been burning the colonies. Break it and the Outer Colonies are safe.",
+    "enemies": {
+     "destroyer": 5,
+     "corvette": 4
+    },
+    "scale": 8.8,
+    "reward": {
+     "rp": 700000,
+     "ti": 3200,
+     "salvage": 140
+    },
+    "patrol": {
+     "ti": 1100,
+     "deut": 55,
+     "salvage": 45
+    },
+    "boss": true,
+    "unlocks": [
+     "light-cruiser"
+    ],
+    "xpCap": 80
+   }
+  ]
+ },
+ {
+  "id": 2,
+  "name": "Inner Colonies",
+  "blurb": "The Covenant fleets are no longer probing. Cruisers and carriers press toward the inner worlds, and every colony on the way has to be held.",
+  "honors": 3,
+  "nodes": [
+   {
+    "id": "t2-n1",
+    "name": "Seraph screen",
+    "blurb": "Fighter wings ring the colony of Harvest, screening what is behind them.",
+    "enemies": {
+     "seraph": 6
+    },
+    "scale": 3.2,
+    "reward": {
+     "rp": 2400000.0,
+     "ti": 9000,
+     "salvage": 220
+    },
+    "patrol": {
+     "ti": 3200,
+     "deut": 80,
+     "salvage": 70
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t2-n2",
+    "name": "Carrion line",
+    "blurb": "Destroyers and fighters strip a lost convoy to the frame.",
+    "enemies": {
+     "destroyer": 4,
+     "seraph": 4
+    },
+    "scale": 5.5,
+    "reward": {
+     "rp": 6000000.0,
+     "ti": 14000,
+     "salvage": 320
+    },
+    "patrol": {
+     "ti": 5000,
+     "deut": 110,
+     "salvage": 100
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t2-n3",
+    "name": "Cruiser on station",
+    "blurb": "The first Covenant cruiser seen this far in: a single hull, and a long reach.",
+    "enemies": {
+     "cruiser": 1,
+     "destroyer": 2
+    },
+    "scale": 4.2,
+    "reward": {
+     "rp": 14000000.0,
+     "ti": 22000,
+     "salvage": 450
+    },
+    "patrol": {
+     "ti": 8000,
+     "deut": 150,
+     "salvage": 150
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t2-n4",
+    "name": "Gantry yards",
+    "blurb": "Two cruisers guard a half-built assault gantry.",
+    "enemies": {
+     "cruiser": 2,
+     "seraph": 4
+    },
+    "scale": 3.0,
+    "reward": {
+     "rp": 32000000.0,
+     "ti": 34000,
+     "salvage": 620
+    },
+    "patrol": {
+     "ti": 12500,
+     "deut": 200,
+     "salvage": 220
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t2-n5",
+    "name": "Mirror anchorage",
+    "blurb": "A cruiser squadron hides behind the planet's ring.",
+    "enemies": {
+     "cruiser": 3,
+     "destroyer": 2
+    },
+    "scale": 3.2,
+    "reward": {
+     "rp": 75000000.0,
+     "ti": 52000,
+     "salvage": 850
+    },
+    "patrol": {
+     "ti": 19000,
+     "deut": 270,
+     "salvage": 320
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t2-n6",
+    "name": "Prophet's escort",
+    "blurb": "The battle-fleet that follows a holy envoy: cruisers, destroyers and a cloud of fighters.",
+    "enemies": {
+     "cruiser": 3,
+     "destroyer": 2,
+     "seraph": 6
+    },
+    "scale": 4.0,
+    "reward": {
+     "rp": 170000000.0,
+     "ti": 80000,
+     "salvage": 1150
+    },
+    "patrol": {
+     "ti": 29000,
+     "deut": 360,
+     "salvage": 450
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t2-n7",
+    "name": "Harbour of Glass",
+    "blurb": "The staging anchorage for the assault on the inner worlds.",
+    "enemies": {
+     "cruiser": 5,
+     "seraph": 6
+    },
+    "scale": 3.1,
+    "reward": {
+     "rp": 400000000.0,
+     "ti": 125000,
+     "salvage": 1550
+    },
+    "patrol": {
+     "ti": 44000,
+     "deut": 480,
+     "salvage": 650
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t2-n8",
+    "name": "Carrier Resolute",
+    "blurb": "An assault carrier and its screen: the ship that has been leading the push inward.",
+    "enemies": {
+     "assault-carrier": 1,
+     "cruiser": 3,
+     "seraph": 6
+    },
+    "scale": 3.3,
+    "reward": {
+     "rp": 1000000000.0,
+     "ti": 200000,
+     "salvage": 2300
+    },
+    "patrol": {
+     "ti": 70000,
+     "deut": 650,
+     "salvage": 900
+    },
+    "xpCap": 80,
+    "boss": true
+   }
+  ],
+  "transferShip": "heavy-cruiser"
+ },
+ {
+  "id": 3,
+  "name": "Reach Approaches",
+  "blurb": "The Covenant armada arrives at the gates of Reach with everything it has. Hold the line, or lose the world.",
+  "honors": 4,
+  "nodes": [
+   {
+    "id": "t3-n1",
+    "name": "Picket line",
+    "blurb": "A carrier and its fighter screen watch the approaches.",
+    "enemies": {
+     "assault-carrier": 3,
+     "cruiser": 4,
+     "seraph": 10
+    },
+    "scale": 9.1,
+    "reward": {
+     "rp": 2500000000.0,
+     "ti": 220000,
+     "salvage": 2500
+    },
+    "patrol": {
+     "ti": 77000,
+     "deut": 240,
+     "salvage": 750
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t3-n2",
+    "name": "Destroyer wall",
+    "blurb": "A wall of destroyers with cruisers behind it.",
+    "enemies": {
+     "battlecruiser": 1,
+     "destroyer": 8,
+     "cruiser": 3
+    },
+    "scale": 18.9,
+    "reward": {
+     "rp": 5880000000.0,
+     "ti": 340000,
+     "salvage": 4250
+    },
+    "patrol": {
+     "ti": 120000,
+     "deut": 324,
+     "salvage": 1275
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t3-n3",
+    "name": "Cruiser pack",
+    "blurb": "Five cruisers hunting in formation.",
+    "enemies": {
+     "cruiser": 8,
+     "assault-carrier": 1
+    },
+    "scale": 13.1,
+    "reward": {
+     "rp": 13800000000.0,
+     "ti": 520000,
+     "salvage": 6000
+    },
+    "patrol": {
+     "ti": 180000,
+     "deut": 408,
+     "salvage": 1800
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t3-n4",
+    "name": "Shipyard ring",
+    "blurb": "The orbital yards the Covenant are using as a forward base.",
+    "enemies": {
+     "cruiser": 6,
+     "assault-carrier": 2,
+     "seraph": 8
+    },
+    "scale": 12.2,
+    "reward": {
+     "rp": 32600000000.0,
+     "ti": 790000,
+     "salvage": 7749
+    },
+    "patrol": {
+     "ti": 280000,
+     "deut": 491,
+     "salvage": 2324
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t3-n5",
+    "name": "Carrier pair",
+    "blurb": "Two assault carriers sharing one screen.",
+    "enemies": {
+     "assault-carrier": 3,
+     "cruiser": 5
+    },
+    "scale": 10,
+    "reward": {
+     "rp": 76700000000.0,
+     "ti": 1200000,
+     "salvage": 9500
+    },
+    "patrol": {
+     "ti": 430000,
+     "deut": 576,
+     "salvage": 2850
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t3-n6",
+    "name": "Battlecruiser escort",
+    "blurb": "A CCS battlecruiser with its cruiser escort.",
+    "enemies": {
+     "battlecruiser": 1,
+     "cruiser": 6
+    },
+    "scale": 14.5,
+    "reward": {
+     "rp": 181000000000.0,
+     "ti": 1900000,
+     "salvage": 11250
+    },
+    "patrol": {
+     "ti": 650000,
+     "deut": 660,
+     "salvage": 3375
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t3-n7",
+    "name": "Fleet anchorage",
+    "blurb": "The assembled fleet waits for the order to advance.",
+    "enemies": {
+     "assault-carrier": 4,
+     "cruiser": 6,
+     "seraph": 10
+    },
+    "scale": 6.9,
+    "reward": {
+     "rp": 425000000000.0,
+     "ti": 2900000,
+     "salvage": 12999
+    },
+    "patrol": {
+     "ti": 1000000,
+     "deut": 743,
+     "salvage": 3899
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t3-n8",
+    "name": "Unyielding",
+    "blurb": "The battlecruiser that leads the assault on the homeworld.",
+    "enemies": {
+     "battlecruiser": 2,
+     "assault-carrier": 2,
+     "cruiser": 4
+    },
+    "scale": 5.9,
+    "reward": {
+     "rp": 1000000000000.0,
+     "ti": 4400000,
+     "salvage": 14749
+    },
+    "patrol": {
+     "ti": 1500000,
+     "deut": 827,
+     "salvage": 4425
+    },
+    "xpCap": 80,
+    "boss": true
+   }
+  ],
+  "transferShip": "carrier"
+ },
+ {
+  "id": 4,
+  "name": "Flood Frontier",
+  "blurb": "An ancient installation wakes and the Flood spill out of it. Two enemies, one fleet, no allies.",
+  "honors": 5,
+  "nodes": [
+   {
+    "id": "t4-n1",
+    "name": "Silent beacons",
+    "blurb": "Sentinel swarms around an ancient relay.",
+    "enemies": {
+     "sentinel": 20,
+     "enforcer": 2
+    },
+    "scale": 53.5,
+    "reward": {
+     "rp": 2500000000000.0,
+     "ti": 6000000,
+     "salvage": 6000
+    },
+    "patrol": {
+     "ti": 2100000,
+     "deut": 320,
+     "salvage": 1800
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t4-n2",
+    "name": "Infested hulks",
+    "blurb": "Cruisers taken over by the Flood.",
+    "enemies": {
+     "infested-cruiser": 10
+    },
+    "scale": 51.8,
+    "reward": {
+     "rp": 5880000000000.0,
+     "ti": 9200000,
+     "salvage": 10200
+    },
+    "patrol": {
+     "ti": 3200000,
+     "deut": 432,
+     "salvage": 3060
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t4-n3",
+    "name": "Spore field",
+    "blurb": "Infested ships and the sentinels that guard against them.",
+    "enemies": {
+     "infested-cruiser": 8,
+     "sentinel": 16
+    },
+    "scale": 59.5,
+    "reward": {
+     "rp": 13800000000000.0,
+     "ti": 14000000,
+     "salvage": 14400
+    },
+    "patrol": {
+     "ti": 4900000,
+     "deut": 544,
+     "salvage": 4320
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t4-n4",
+    "name": "Enforcer gate",
+    "blurb": "An Enforcer holds the way into the installation.",
+    "enemies": {
+     "enforcer": 4,
+     "sentinel": 16
+    },
+    "scale": 26.2,
+    "reward": {
+     "rp": 32600000000000.0,
+     "ti": 22000000,
+     "salvage": 18599
+    },
+    "patrol": {
+     "ti": 7600000,
+     "deut": 656,
+     "salvage": 5579
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t4-n5",
+    "name": "Hive fleet",
+    "blurb": "Six infested hulls close in together.",
+    "enemies": {
+     "infested-cruiser": 14
+    },
+    "scale": 35.9,
+    "reward": {
+     "rp": 76700000000000.0,
+     "ti": 33000000,
+     "salvage": 22800
+    },
+    "patrol": {
+     "ti": 12000000,
+     "deut": 768,
+     "salvage": 6840
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t4-n6",
+    "name": "Twin guardians",
+    "blurb": "Two Enforcers and an infested escort.",
+    "enemies": {
+     "enforcer": 5,
+     "infested-cruiser": 8
+    },
+    "scale": 13.7,
+    "reward": {
+     "rp": 181000000000000.0,
+     "ti": 51000000,
+     "salvage": 27000
+    },
+    "patrol": {
+     "ti": 18000000,
+     "deut": 880,
+     "salvage": 8100
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t4-n7",
+    "name": "Containment ring",
+    "blurb": "The ring the Forerunners built to hold the Flood.",
+    "enemies": {
+     "enforcer": 6,
+     "infested-cruiser": 8
+    },
+    "scale": 11.4,
+    "reward": {
+     "rp": 425000000000000.0,
+     "ti": 78000000,
+     "salvage": 31199
+    },
+    "patrol": {
+     "ti": 27000000,
+     "deut": 991,
+     "salvage": 9359
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t4-n8",
+    "name": "Gravemind's hulk",
+    "blurb": "The mind of the Flood, grown into a ship.",
+    "enemies": {
+     "flood-hulk": 2,
+     "infested-cruiser": 8,
+     "sentinel": 16
+    },
+    "scale": 18.5,
+    "reward": {
+     "rp": 1000000000000000.0,
+     "ti": 120000000,
+     "salvage": 35400
+    },
+    "patrol": {
+     "ti": 42000000,
+     "deut": 1104,
+     "salvage": 10619
+    },
+    "xpCap": 80,
+    "boss": true
+   }
+  ],
+  "transferShip": "flagship"
+ },
+ {
+  "id": 5,
+  "name": "The Ark",
+  "blurb": "The end of the war lies beyond the portal. One last fleet, one last theatre.",
+  "honors": 6,
+  "nodes": [
+   {
+    "id": "t5-n1",
+    "name": "Last picket",
+    "blurb": "The final screen before the Ark.",
+    "enemies": {
+     "battlecruiser": 3,
+     "cruiser": 8
+    },
+    "scale": 22.1,
+    "reward": {
+     "rp": 2500000000000000.0,
+     "ti": 150000000,
+     "salvage": 15000
+    },
+    "patrol": {
+     "ti": 52000000,
+     "deut": 400,
+     "salvage": 4500
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t5-n2",
+    "name": "Sentinel armada",
+    "blurb": "Thousands of sentinels, arrayed as a fleet.",
+    "enemies": {
+     "sentinel": 20,
+     "enforcer": 5
+    },
+    "scale": 20.6,
+    "reward": {
+     "rp": 5880000000000000.0,
+     "ti": 230000000,
+     "salvage": 25500
+    },
+    "patrol": {
+     "ti": 81000000,
+     "deut": 540,
+     "salvage": 7650
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t5-n3",
+    "name": "Shield wall",
+    "blurb": "Enforcers hold the gate to the portal.",
+    "enemies": {
+     "enforcer": 4
+    },
+    "scale": 34.7,
+    "reward": {
+     "rp": 1.38e+16,
+     "ti": 350000000,
+     "salvage": 36000
+    },
+    "patrol": {
+     "ti": 120000000,
+     "deut": 680,
+     "salvage": 10800
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t5-n4",
+    "name": "Loyalist fleet",
+    "blurb": "The Prophet's loyalist fleet.",
+    "enemies": {
+     "battlecruiser": 3,
+     "assault-carrier": 2
+    },
+    "scale": 22.5,
+    "reward": {
+     "rp": 3.26e+16,
+     "ti": 540000000,
+     "salvage": 46499
+    },
+    "patrol": {
+     "ti": 190000000,
+     "deut": 819,
+     "salvage": 13949
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t5-n5",
+    "name": "Ark foundry",
+    "blurb": "Where the Ark builds its sentinels.",
+    "enemies": {
+     "enforcer": 3,
+     "battlecruiser": 2
+    },
+    "scale": 22,
+    "reward": {
+     "rp": 7.67e+16,
+     "ti": 830000000,
+     "salvage": 57000
+    },
+    "patrol": {
+     "ti": 290000000,
+     "deut": 960,
+     "salvage": 17100
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t5-n6",
+    "name": "Brute guard",
+    "blurb": "The Prophet's personal guard fleet.",
+    "enemies": {
+     "battlecruiser": 4,
+     "cruiser": 4
+    },
+    "scale": 20.5,
+    "reward": {
+     "rp": 1.81e+17,
+     "ti": 1300000000,
+     "salvage": 67500
+    },
+    "patrol": {
+     "ti": 450000000,
+     "deut": 1100,
+     "salvage": 20250
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t5-n7",
+    "name": "Ring of fire",
+    "blurb": "Everything the Covenant has left.",
+    "enemies": {
+     "supercarrier": 1,
+     "battlecruiser": 2,
+     "enforcer": 2
+    },
+    "scale": 13.9,
+    "reward": {
+     "rp": 4.25e+17,
+     "ti": 2000000000,
+     "salvage": 77999
+    },
+    "patrol": {
+     "ti": 680000000,
+     "deut": 1239,
+     "salvage": 23399
+    },
+    "xpCap": 80
+   },
+   {
+    "id": "t5-n8",
+    "name": "Dreadnought of Truth",
+    "blurb": "The Prophet's own supercarrier, shield-wall of the Great Journey.",
+    "enemies": {
+     "supercarrier": 1,
+     "battlecruiser": 3,
+     "enforcer": 2
+    },
+    "scale": 12,
+    "reward": {
+     "rp": 1e+18,
+     "ti": 3000000000,
+     "salvage": 88499
+    },
+    "patrol": {
+     "ti": 1000000000,
+     "deut": 1380,
+     "salvage": 26549
+    },
+    "xpCap": 80,
+    "boss": true
+   }
+  ]
+ }
+]

@@ -1,0 +1,36 @@
+{
+  "startingRp": 15,
+  "growth": 1.14,
+  "milestones": [
+    25,
+    50,
+    100,
+    200
+  ],
+  "milestoneMultiplier": 2,
+  "drive": {
+    "base": 1,
+    "rateShare": 0.03
+  },
+  "offline": {
+    "baseCapHours": 8,
+    "baseEfficiency": 0.5,
+    "backgroundLimitSeconds": 300
+  },
+  "autobuy": {
+    "budgetShare": 0.25,
+    "paybackSeconds": 900
+  },
+  "prestige": {
+    "trigger": 20000000,
+    "scale": 500000,
+    "medalBonus": 0.05
+  },
+  "value": {
+    "rp": 1,
+    "ti": 5,
+    "deut": 8,
+    "pers": 15,
+    "intel": 20
+  }
+}

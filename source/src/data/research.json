@@ -1,0 +1,579 @@
+{
+  "config": {
+    "queues": 1,
+    "doctrineSlots": 1,
+    "swapIntel": 200,
+    "swapSeconds": 3600,
+    "shield": {
+      "delay": 6,
+      "rate": 0.04
+    },
+    "minBuildSpeed": 0.25
+  },
+  "branches": [
+    {
+      "id": "naval",
+      "name": "Naval engineering",
+      "blurb": "Harder hulls and faster slips."
+    },
+    {
+      "id": "ordnance",
+      "name": "Ordnance",
+      "blurb": "More damage, faster cycling."
+    },
+    {
+      "id": "logistics",
+      "name": "Logistics",
+      "blurb": "Cheaper sorties, bigger stockpiles, faster repair."
+    },
+    {
+      "id": "infantry",
+      "name": "Infantry",
+      "blurb": "Better kit and training for the marines."
+    },
+    {
+      "id": "captured",
+      "name": "Captured tech",
+      "blurb": "Covenant salvage, reverse-engineered. Paid for in Salvage as well as Intel."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "bulkheads",
+      "branch": "naval",
+      "name": "Reinforced bulkheads",
+      "blurb": "+8% hull.",
+      "intel": 50,
+      "seconds": 90,
+      "requires": null,
+      "effects": [
+        {
+          "kind": "hull",
+          "amount": 0.08
+        }
+      ]
+    },
+    {
+      "id": "ablative",
+      "branch": "naval",
+      "name": "Ablative plating",
+      "blurb": "+10% armour.",
+      "intel": 120,
+      "seconds": 180,
+      "requires": "bulkheads",
+      "effects": [
+        {
+          "kind": "armour",
+          "amount": 0.1
+        }
+      ]
+    },
+    {
+      "id": "automation",
+      "branch": "naval",
+      "name": "Drydock automation",
+      "blurb": "Ships build 20% faster.",
+      "intel": 220,
+      "seconds": 300,
+      "requires": "bulkheads",
+      "effects": [
+        {
+          "kind": "build",
+          "amount": 0.2
+        }
+      ]
+    },
+    {
+      "id": "compartments",
+      "branch": "naval",
+      "name": "Compartmentalised hulls",
+      "blurb": "+12% hull.",
+      "intel": 500,
+      "seconds": 600,
+      "requires": "ablative",
+      "effects": [
+        {
+          "kind": "hull",
+          "amount": 0.12
+        }
+      ]
+    },
+    {
+      "id": "laminate",
+      "branch": "naval",
+      "name": "Titanium laminate",
+      "blurb": "+15% armour.",
+      "intel": 1100,
+      "seconds": 900,
+      "requires": "compartments",
+      "effects": [
+        {
+          "kind": "armour",
+          "amount": 0.15
+        }
+      ]
+    },
+    {
+      "id": "targeting",
+      "branch": "ordnance",
+      "name": "Targeting computers",
+      "blurb": "+6% ship damage.",
+      "intel": 60,
+      "seconds": 90,
+      "requires": null,
+      "effects": [
+        {
+          "kind": "damage",
+          "amount": 0.06
+        }
+      ]
+    },
+    {
+      "id": "reloaders",
+      "branch": "ordnance",
+      "name": "Autoloader tuning",
+      "blurb": "Weapons cycle 8% faster.",
+      "intel": 150,
+      "seconds": 200,
+      "requires": "targeting",
+      "effects": [
+        {
+          "kind": "cooldown",
+          "amount": 0.08
+        }
+      ]
+    },
+    {
+      "id": "warheads",
+      "branch": "ordnance",
+      "name": "Warhead upgrades",
+      "blurb": "+10% ship damage.",
+      "intel": 300,
+      "seconds": 400,
+      "requires": "targeting",
+      "effects": [
+        {
+          "kind": "damage",
+          "amount": 0.1
+        }
+      ]
+    },
+    {
+      "id": "capacitors",
+      "branch": "ordnance",
+      "name": "MAC capacitor banks",
+      "blurb": "+12% ship damage.",
+      "intel": 700,
+      "seconds": 700,
+      "requires": "warheads",
+      "effects": [
+        {
+          "kind": "damage",
+          "amount": 0.12
+        }
+      ]
+    },
+    {
+      "id": "firecontrol",
+      "branch": "ordnance",
+      "name": "Fire-control network",
+      "blurb": "Weapons cycle 10% faster.",
+      "intel": 1500,
+      "seconds": 1000,
+      "requires": "capacitors",
+      "effects": [
+        {
+          "kind": "cooldown",
+          "amount": 0.1
+        }
+      ]
+    },
+    {
+      "id": "chains",
+      "branch": "logistics",
+      "name": "Supply chains",
+      "blurb": "+5% production of everything.",
+      "intel": 40,
+      "seconds": 60,
+      "requires": null,
+      "effects": [
+        {
+          "kind": "production",
+          "amount": 0.05
+        }
+      ]
+    },
+    {
+      "id": "depots",
+      "branch": "logistics",
+      "name": "Forward depots",
+      "blurb": "+25% storage for every stockpile.",
+      "intel": 100,
+      "seconds": 150,
+      "requires": "chains",
+      "effects": [
+        {
+          "kind": "storage",
+          "amount": 0.25
+        }
+      ]
+    },
+    {
+      "id": "burns",
+      "branch": "logistics",
+      "name": "Efficient burns",
+      "blurb": "Sorties cost 15% less Deuterium.",
+      "intel": 200,
+      "seconds": 240,
+      "requires": "chains",
+      "effects": [
+        {
+          "kind": "sortie",
+          "amount": 0.15
+        }
+      ]
+    },
+    {
+      "id": "dockyards",
+      "branch": "logistics",
+      "name": "Field dockyards",
+      "blurb": "Ships repair 40% faster.",
+      "intel": 450,
+      "seconds": 420,
+      "requires": "depots",
+      "effects": [
+        {
+          "kind": "repair",
+          "amount": 0.4
+        }
+      ]
+    },
+    {
+      "id": "convoys",
+      "branch": "logistics",
+      "name": "Convoy routes",
+      "blurb": "Patrol pays 20% more Titanium and Salvage.",
+      "intel": 650,
+      "seconds": 600,
+      "requires": "burns",
+      "effects": [
+        {
+          "kind": "patrol",
+          "amount": 0.2
+        }
+      ]
+    },
+    {
+      "id": "quartermasters",
+      "branch": "logistics",
+      "name": "Quartermaster corps",
+      "blurb": "+8% production of everything.",
+      "intel": 1000,
+      "seconds": 900,
+      "requires": "dockyards",
+      "effects": [
+        {
+          "kind": "production",
+          "amount": 0.08
+        }
+      ]
+    },
+    {
+      "id": "optics",
+      "branch": "infantry",
+      "name": "Rifle optics",
+      "blurb": "+8% Firepower.",
+      "intel": 30,
+      "seconds": 60,
+      "requires": null,
+      "effects": [
+        {
+          "kind": "stat",
+          "stat": "firepower",
+          "amount": 0.08
+        }
+      ]
+    },
+    {
+      "id": "plates",
+      "branch": "infantry",
+      "name": "Plate carriers",
+      "blurb": "+8% Grit.",
+      "intel": 60,
+      "seconds": 120,
+      "requires": "optics",
+      "effects": [
+        {
+          "kind": "stat",
+          "stat": "grit",
+          "amount": 0.08
+        }
+      ]
+    },
+    {
+      "id": "comms",
+      "branch": "infantry",
+      "name": "Squad radios",
+      "blurb": "+10% Tactics.",
+      "intel": 100,
+      "seconds": 180,
+      "requires": null,
+      "effects": [
+        {
+          "kind": "stat",
+          "stat": "tactics",
+          "amount": 0.1
+        }
+      ]
+    },
+    {
+      "id": "surgeons",
+      "branch": "infantry",
+      "name": "Field surgeons",
+      "blurb": "Wounded recover 30% faster.",
+      "intel": 160,
+      "seconds": 300,
+      "requires": "plates",
+      "effects": [
+        {
+          "kind": "recovery",
+          "amount": 0.3
+        }
+      ]
+    },
+    {
+      "id": "medevac",
+      "branch": "infantry",
+      "name": "Medevac wing",
+      "blurb": "More casualties are wounds: +15 points.",
+      "intel": 250,
+      "seconds": 420,
+      "requires": "surgeons",
+      "effects": [
+        {
+          "kind": "wounded",
+          "amount": 0.15
+        }
+      ]
+    },
+    {
+      "id": "drills",
+      "branch": "infantry",
+      "name": "Battle drills",
+      "blurb": "+8% squad Power.",
+      "intel": 400,
+      "seconds": 600,
+      "requires": "comms",
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 0.08
+        }
+      ]
+    },
+    {
+      "id": "combined",
+      "branch": "infantry",
+      "name": "Combined arms",
+      "blurb": "Vehicles add 20% more Power.",
+      "intel": 600,
+      "seconds": 900,
+      "requires": "drills",
+      "effects": [
+        {
+          "kind": "vehicle",
+          "amount": 0.2
+        }
+      ]
+    },
+    {
+      "id": "school",
+      "branch": "infantry",
+      "name": "Veterans' school",
+      "blurb": "Marines earn 25% more experience.",
+      "intel": 900,
+      "seconds": 1200,
+      "requires": "medevac",
+      "effects": [
+        {
+          "kind": "xp",
+          "amount": 0.25
+        }
+      ]
+    },
+    {
+      "id": "cov-plating",
+      "branch": "captured",
+      "name": "Covenant alloy plating",
+      "blurb": "+12% armour.",
+      "intel": 150,
+      "salvage": 25,
+      "seconds": 120,
+      "requires": null,
+      "effects": [
+        {
+          "kind": "armour",
+          "amount": 0.12
+        }
+      ]
+    },
+    {
+      "id": "plasma-sinks",
+      "branch": "captured",
+      "name": "Plasma sinks",
+      "blurb": "Ships carry a shield worth 8% of their hull that recharges between hits.",
+      "intel": 400,
+      "salvage": 60,
+      "seconds": 300,
+      "requires": "cov-plating",
+      "effects": [
+        {
+          "kind": "shield",
+          "amount": 0.08
+        }
+      ]
+    },
+    {
+      "id": "cov-optics",
+      "branch": "captured",
+      "name": "Reverse-engineered optics",
+      "blurb": "+10% ship damage.",
+      "intel": 700,
+      "salvage": 100,
+      "seconds": 480,
+      "requires": "cov-plating",
+      "effects": [
+        {
+          "kind": "damage",
+          "amount": 0.1
+        }
+      ]
+    },
+    {
+      "id": "reclaimers",
+      "branch": "captured",
+      "name": "Reclamation crews",
+      "blurb": "+30% Salvage from every source.",
+      "intel": 800,
+      "salvage": 80,
+      "seconds": 420,
+      "requires": "cov-plating",
+      "effects": [
+        {
+          "kind": "salvage",
+          "amount": 0.3
+        }
+      ]
+    },
+    {
+      "id": "slip-tracking",
+      "branch": "captured",
+      "name": "Slipspace tracking",
+      "blurb": "Campaign wins pay 12% more.",
+      "intel": 1200,
+      "salvage": 180,
+      "seconds": 720,
+      "requires": "plasma-sinks",
+      "effects": [
+        {
+          "kind": "reward",
+          "amount": 0.12
+        }
+      ]
+    },
+    {
+      "id": "projectors",
+      "branch": "captured",
+      "name": "Plasma projectors",
+      "blurb": "+15% ship damage.",
+      "intel": 1800,
+      "salvage": 260,
+      "seconds": 900,
+      "requires": "cov-optics",
+      "effects": [
+        {
+          "kind": "damage",
+          "amount": 0.15
+        }
+      ]
+    }
+  ],
+  "doctrines": [
+    {
+      "id": "defensive",
+      "name": "Defensive posture",
+      "blurb": "+20% armour, -10% ship damage.",
+      "effects": [
+        {
+          "kind": "armour",
+          "amount": 0.2
+        },
+        {
+          "kind": "damage",
+          "amount": -0.1
+        }
+      ]
+    },
+    {
+      "id": "shock",
+      "name": "Shock and awe",
+      "blurb": "+40% ship damage for the first 10 s of a battle, -10% hull.",
+      "effects": [
+        {
+          "kind": "opening",
+          "amount": 0.4,
+          "seconds": 10
+        },
+        {
+          "kind": "hull",
+          "amount": -0.1
+        }
+      ]
+    },
+    {
+      "id": "attrition",
+      "name": "Attrition warfare",
+      "blurb": "Patrol pays 25% more Titanium and Salvage; Campaign wins pay 15% less.",
+      "effects": [
+        {
+          "kind": "patrol",
+          "amount": 0.25
+        },
+        {
+          "kind": "reward",
+          "amount": -0.15
+        }
+      ]
+    },
+    {
+      "id": "marines-first",
+      "name": "Marines first",
+      "blurb": "+30% marine Power, ships build 10% slower.",
+      "effects": [
+        {
+          "kind": "marine",
+          "amount": 0.3
+        },
+        {
+          "kind": "build",
+          "amount": -0.1
+        }
+      ]
+    },
+    {
+      "id": "logistics-corps",
+      "name": "Logistics corps",
+      "blurb": "+15% production of everything, -5% ship damage.",
+      "effects": [
+        {
+          "kind": "production",
+          "amount": 0.15
+        },
+        {
+          "kind": "damage",
+          "amount": -0.05
+        }
+      ]
+    }
+  ]
+}

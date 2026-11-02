@@ -1,0 +1,59 @@
+{
+  "tick": 0.5,
+  "bandSeconds": 6,
+  "maxSeconds": 240,
+  "breakFraction": 0.5,
+  "shieldMult": {
+    "kinetic": 0.6,
+    "explosive": 1.0,
+    "energy": 1.5
+  },
+  "minHullShare": 0.1,
+  "pdChance": 0.4,
+  "pdSpill": 0.5,
+  "pdMaxIntercept": 0.9,
+  "stance": {
+    "standoff": {
+      "band": "long",
+      "name": "Stand-off"
+    },
+    "standard": {
+      "band": "medium",
+      "name": "Standard"
+    },
+    "closein": {
+      "band": "close",
+      "name": "Close-in"
+    }
+  },
+  "abilities": {
+    "focus": {
+      "name": "Focus Fire",
+      "cooldown": 45,
+      "deut": 5,
+      "duration": 10,
+      "damageBonus": 0.25,
+      "blurb": "+25% damage against the chosen target for 10 s."
+    },
+    "evasive": {
+      "name": "Evasive Pattern",
+      "cooldown": 60,
+      "deut": 5,
+      "duration": 8,
+      "damageTaken": 0.7,
+      "blurb": "-30% damage taken for 8 s."
+    },
+    "overcharge": {
+      "name": "MAC Overcharge",
+      "cooldown": 40,
+      "deut": 10,
+      "blurb": "Each MAC's next volley deals double damage and ignores armour."
+    },
+    "retreat": {
+      "name": "Slipspace Retreat",
+      "cooldown": 0,
+      "deut": 20,
+      "blurb": "Leave the battle with ships intact. No rewards."
+    }
+  }
+}

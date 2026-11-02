@@ -1,0 +1,155 @@
+[
+  {
+    "id": "auto-depot",
+    "name": "Auto-requisition: Supply Depots",
+    "description": "Automatically buys Supply Depots that pay for themselves within 15 minutes, spending at most a quarter of your stock at a time.",
+    "kind": "autobuy",
+    "building": "depot",
+    "maxLevel": 1,
+    "costs": [
+      2
+    ]
+  },
+  {
+    "id": "auto-hub",
+    "name": "Auto-requisition: Logistics Hubs",
+    "description": "Automatically buys Logistics Hubs that pay for themselves within 15 minutes, spending at most a quarter of your stock at a time.",
+    "kind": "autobuy",
+    "building": "hub",
+    "maxLevel": 1,
+    "costs": [
+      4
+    ]
+  },
+  {
+    "id": "auto-charter",
+    "name": "Auto-requisition: Colony Charters",
+    "description": "Automatically buys Colony Charters that pay for themselves within 15 minutes, spending at most a quarter of your stock at a time.",
+    "kind": "autobuy",
+    "building": "charter",
+    "maxLevel": 1,
+    "costs": [
+      10
+    ]
+  },
+  {
+    "id": "auto-platform",
+    "name": "Auto-requisition: Orbital Platforms",
+    "description": "Automatically buys Orbital Platforms that pay for themselves within 15 minutes, spending at most a quarter of your stock at a time.",
+    "kind": "autobuy",
+    "building": "platform",
+    "maxLevel": 1,
+    "costs": [
+      25
+    ]
+  },
+  {
+    "id": "auto-yard",
+    "name": "Auto-requisition: Fleet Yards",
+    "description": "Automatically buys Fleet Yards that pay for themselves within 15 minutes, spending at most a quarter of your stock at a time.",
+    "kind": "autobuy",
+    "building": "yard",
+    "maxLevel": 1,
+    "costs": [
+      60
+    ]
+  },
+  {
+    "id": "auto-command",
+    "name": "Auto-requisition: Sector Commands",
+    "description": "Automatically buys Sector Commands that pay for themselves within 15 minutes, spending at most a quarter of your stock at a time.",
+    "kind": "autobuy",
+    "building": "command",
+    "maxLevel": 1,
+    "costs": [
+      150
+    ]
+  },
+  {
+    "id": "forward-depots",
+    "name": "Forward depots",
+    "description": "Every new run begins with Supply Depots already standing.",
+    "kind": "startBuildings",
+    "building": "depot",
+    "counts": [
+      5,
+      10,
+      20,
+      35
+    ],
+    "maxLevel": 4,
+    "costs": [
+      3,
+      8,
+      20,
+      50
+    ]
+  },
+  {
+    "id": "forward-hubs",
+    "name": "Forward hubs",
+    "description": "Every new run begins with Logistics Hubs already standing.",
+    "kind": "startBuildings",
+    "building": "hub",
+    "counts": [
+      2,
+      5,
+      10
+    ],
+    "maxLevel": 3,
+    "costs": [
+      12,
+      40,
+      120
+    ]
+  },
+  {
+    "id": "extended-rotations",
+    "name": "Extended rotations",
+    "description": "Your logistics staff keep working longer while you are away.",
+    "kind": "offlineCap",
+    "hoursPerLevel": 4,
+    "maxLevel": 4,
+    "costs": [
+      3,
+      10,
+      30,
+      100
+    ]
+  },
+  {
+    "id": "field-logistics",
+    "name": "Field logistics",
+    "description": "Raises how much of your normal output continues while you are away.",
+    "kind": "offlineEfficiency",
+    "perLevel": 0.1,
+    "maxLevel": 5,
+    "costs": [
+      4,
+      10,
+      25,
+      60,
+      150
+    ]
+  },
+  {
+    "id": "research-queue",
+    "name": "Second research bay",
+    "description": "Run two research projects at once.",
+    "kind": "researchQueue",
+    "maxLevel": 1,
+    "costs": [
+      6
+    ]
+  },
+  {
+    "id": "staff-college",
+    "name": "Staff college",
+    "description": "Adopt a second doctrine alongside the first.",
+    "kind": "doctrineSlot",
+    "maxLevel": 1,
+    "costs": [
+      10
+    ]
+  }
+]

@@ -1,0 +1,210 @@
+[
+ {
+  "id": "frigate",
+  "name": "Frigate",
+  "canon": "Paris class",
+  "role": "Cheap, fast backbone of the fleet",
+  "command": 1,
+  "hull": 400,
+  "armour": 10,
+  "speed": 1.3,
+  "damageMult": 1,
+  "slots": {
+   "weapon": 2,
+   "defence": 1,
+   "utility": 0
+  },
+  "cost": {
+   "rp": 1000,
+   "ti": 250
+  },
+  "buildSeconds": 120,
+  "repairTi": 60,
+  "unlock": {
+   "kind": "start"
+  },
+  "defaultLoadout": {
+   "weapon": [
+    "mac",
+    "archer"
+   ],
+   "defence": [
+    "pd"
+   ],
+   "utility": []
+  },
+  "icon": "frigate"
+ },
+ {
+  "id": "light-cruiser",
+  "name": "Light cruiser",
+  "canon": "Halcyon class",
+  "role": "Balanced line ship with heavy mounts",
+  "command": 3,
+  "hull": 2000,
+  "armour": 25,
+  "speed": 1.0,
+  "damageMult": 4,
+  "slots": {
+   "weapon": 3,
+   "defence": 1,
+   "utility": 1
+  },
+  "cost": {
+   "rp": 60000,
+   "ti": 9000
+  },
+  "buildSeconds": 600,
+  "repairTi": 2250,
+  "unlock": {
+   "kind": "node",
+   "node": "t1-n8"
+  },
+  "defaultLoadout": {
+   "weapon": [
+    "mac",
+    "archer",
+    "archer"
+   ],
+   "defence": [
+    "pd"
+   ],
+   "utility": [
+    "bulkheads"
+   ]
+  },
+  "icon": "cruiser"
+ },
+ {
+  "id": "heavy-cruiser",
+  "name": "Heavy cruiser",
+  "canon": "Marathon class",
+  "role": "Capital hull that carries the fleet's heaviest mounts",
+  "command": 6,
+  "hull": 9000,
+  "armour": 60,
+  "speed": 0.8,
+  "damageMult": 16,
+  "slots": {
+   "weapon": 4,
+   "defence": 2,
+   "utility": 1
+  },
+  "cost": {
+   "rp": 1500000,
+   "ti": 220000
+  },
+  "buildSeconds": 2400,
+  "repairTi": 55000,
+  "unlock": {
+   "kind": "node",
+   "node": "t1-n8"
+  },
+  "defaultLoadout": {
+   "weapon": [
+    "mac",
+    "mac",
+    "archer",
+    "archer"
+   ],
+   "defence": [
+    "pd",
+    "plating"
+   ],
+   "utility": [
+    "bulkheads"
+   ]
+  },
+  "icon": "heavy"
+ },
+ {
+  "id": "carrier",
+  "name": "Carrier",
+  "canon": "Phoenix class",
+  "role": "Command ship with a deck of heavy mounts",
+  "command": 10,
+  "hull": 36000,
+  "armour": 90,
+  "speed": 0.6,
+  "damageMult": 64,
+  "slots": {
+   "weapon": 5,
+   "defence": 2,
+   "utility": 2
+  },
+  "cost": {
+   "rp": 1500000000.0,
+   "ti": 1200000.0
+  },
+  "buildSeconds": 7200,
+  "repairTi": 300000.0,
+  "unlock": {
+   "kind": "node",
+   "node": "t2-n8"
+  },
+  "defaultLoadout": {
+   "weapon": [
+    "mac",
+    "mac",
+    "mac",
+    "archer",
+    "archer"
+   ],
+   "defence": [
+    "pd",
+    "plating"
+   ],
+   "utility": [
+    "bulkheads",
+    "uplink"
+   ]
+  },
+  "icon": "carrier"
+ },
+ {
+  "id": "flagship",
+  "name": "Flagship",
+  "canon": "Infinity class",
+  "role": "The fleet's crown jewel",
+  "command": 20,
+  "hull": 150000,
+  "armour": 140,
+  "speed": 0.5,
+  "damageMult": 256,
+  "slots": {
+   "weapon": 6,
+   "defence": 3,
+   "utility": 2
+  },
+  "cost": {
+   "rp": 1500000000000.0,
+   "ti": 25000000.0
+  },
+  "buildSeconds": 14400,
+  "repairTi": 6000000.0,
+  "unlock": {
+   "kind": "node",
+   "node": "t3-n8"
+  },
+  "defaultLoadout": {
+   "weapon": [
+    "mac",
+    "mac",
+    "mac",
+    "mac",
+    "archer",
+    "archer"
+   ],
+   "defence": [
+    "pd",
+    "pd",
+    "plating"
+   ],
+   "utility": [
+    "bulkheads",
+    "uplink"
+   ]
+  },
+  "icon": "flagship"
+ }
+]

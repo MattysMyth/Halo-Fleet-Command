@@ -1,0 +1,509 @@
+[
+ {
+  "id": "gunboat",
+  "name": "Insurgent gunboat",
+  "faction": "insurrectionist",
+  "command": 1,
+  "hull": 220,
+  "shield": 0,
+  "armour": 5,
+  "speed": 1.4,
+  "prefer": "close",
+  "weapons": [
+   {
+    "id": "gunboat-cannon",
+    "name": "Rotary cannon",
+    "type": "kinetic",
+    "reach": "close",
+    "shots": 6,
+    "damage": 8,
+    "cooldown": 2.5,
+    "pen": 0,
+    "accuracy": 0.75
+   }
+  ]
+ },
+ {
+  "id": "raider-frigate",
+  "name": "Insurgent frigate",
+  "faction": "insurrectionist",
+  "command": 1,
+  "hull": 380,
+  "shield": 0,
+  "armour": 8,
+  "speed": 1.1,
+  "prefer": "medium",
+  "pd": 1,
+  "weapons": [
+   {
+    "id": "raider-mac",
+    "name": "Light MAC",
+    "type": "kinetic",
+    "reach": "long",
+    "shots": 1,
+    "damage": 120,
+    "cooldown": 9,
+    "pen": 0.5,
+    "accuracy": 0.8,
+    "mac": true
+   },
+   {
+    "id": "raider-pods",
+    "name": "Missile rack",
+    "type": "explosive",
+    "reach": "medium",
+    "shots": 4,
+    "damage": 28,
+    "cooldown": 6,
+    "pen": 0.2,
+    "accuracy": 0.85,
+    "missile": true
+   }
+  ]
+ },
+ {
+  "id": "corvette",
+  "name": "Covenant corvette",
+  "faction": "covenant",
+  "command": 1,
+  "hull": 350,
+  "shield": 300,
+  "armour": 5,
+  "speed": 1.4,
+  "prefer": "close",
+  "regen": {
+   "delay": 5,
+   "rate": 0.04
+  },
+  "weapons": [
+   {
+    "id": "corvette-bolts",
+    "name": "Plasma bolts",
+    "type": "energy",
+    "reach": "close",
+    "shots": 4,
+    "damage": 15,
+    "cooldown": 3,
+    "pen": 0.5,
+    "accuracy": 0.8
+   }
+  ]
+ },
+ {
+  "id": "destroyer",
+  "name": "Covenant destroyer",
+  "faction": "covenant",
+  "command": 3,
+  "hull": 1800,
+  "shield": 1500,
+  "armour": 20,
+  "speed": 1.0,
+  "prefer": "medium",
+  "regen": {
+   "delay": 5,
+   "rate": 0.03
+  },
+  "weapons": [
+   {
+    "id": "destroyer-torpedoes",
+    "name": "Plasma torpedoes",
+    "type": "energy",
+    "reach": "medium",
+    "shots": 2,
+    "damage": 90,
+    "cooldown": 5,
+    "pen": 0.3,
+    "accuracy": 0.9,
+    "missile": true
+   },
+   {
+    "id": "destroyer-repeaters",
+    "name": "Plasma repeaters",
+    "type": "energy",
+    "reach": "close",
+    "shots": 6,
+    "damage": 18,
+    "cooldown": 3,
+    "pen": 0.5,
+    "accuracy": 0.8
+   }
+  ]
+ },
+ {
+  "id": "seraph",
+  "name": "Seraph wing",
+  "faction": "covenant",
+  "command": 1,
+  "hull": 450,
+  "shield": 500,
+  "armour": 6,
+  "speed": 2.0,
+  "prefer": "close",
+  "regen": {
+   "delay": 4,
+   "rate": 0.05
+  },
+  "weapons": [
+   {
+    "id": "seraph-cannons",
+    "name": "Plasma cannons",
+    "type": "energy",
+    "reach": "close",
+    "shots": 4,
+    "damage": 22,
+    "cooldown": 2.5,
+    "pen": 0,
+    "accuracy": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cruiser",
+  "name": "Covenant cruiser",
+  "faction": "covenant",
+  "command": 6,
+  "hull": 9000,
+  "shield": 8000,
+  "armour": 45,
+  "speed": 0.8,
+  "prefer": "long",
+  "pd": 2,
+  "regen": {
+   "delay": 6,
+   "rate": 0.025
+  },
+  "weapons": [
+   {
+    "id": "cruiser-lance",
+    "name": "Energy lance",
+    "type": "energy",
+    "reach": "long",
+    "shots": 1,
+    "damage": 600,
+    "cooldown": 9,
+    "pen": 0.5,
+    "accuracy": 0.8
+   },
+   {
+    "id": "cruiser-torpedoes",
+    "name": "Plasma torpedoes",
+    "type": "energy",
+    "reach": "medium",
+    "shots": 4,
+    "damage": 110,
+    "cooldown": 6,
+    "pen": 0.2,
+    "accuracy": 0.85,
+    "missile": true
+   },
+   {
+    "id": "cruiser-repeaters",
+    "name": "Plasma repeaters",
+    "type": "energy",
+    "reach": "close",
+    "shots": 8,
+    "damage": 20,
+    "cooldown": 3,
+    "pen": 0,
+    "accuracy": 0.8
+   }
+  ]
+ },
+ {
+  "id": "assault-carrier",
+  "name": "Assault carrier",
+  "faction": "covenant",
+  "command": 14,
+  "hull": 28000,
+  "shield": 26000,
+  "armour": 65,
+  "speed": 0.7,
+  "prefer": "medium",
+  "pd": 4,
+  "regen": {
+   "delay": 8,
+   "rate": 0.02
+  },
+  "weapons": [
+   {
+    "id": "carrier-lance",
+    "name": "Carrier lance",
+    "type": "energy",
+    "reach": "long",
+    "shots": 2,
+    "damage": 520,
+    "cooldown": 8,
+    "pen": 0.5,
+    "accuracy": 0.8
+   },
+   {
+    "id": "carrier-torpedoes",
+    "name": "Torpedo salvo",
+    "type": "energy",
+    "reach": "medium",
+    "shots": 8,
+    "damage": 120,
+    "cooldown": 7,
+    "pen": 0.2,
+    "accuracy": 0.85,
+    "missile": true
+   },
+   {
+    "id": "carrier-repeaters",
+    "name": "Plasma batteries",
+    "type": "energy",
+    "reach": "close",
+    "shots": 12,
+    "damage": 22,
+    "cooldown": 3,
+    "pen": 0,
+    "accuracy": 0.8
+   }
+  ]
+ },
+ {
+  "id": "battlecruiser",
+  "name": "CCS battlecruiser",
+  "faction": "covenant",
+  "command": 30,
+  "hull": 70000,
+  "shield": 60000,
+  "armour": 85,
+  "speed": 0.7,
+  "prefer": "long",
+  "pd": 6,
+  "regen": {
+   "delay": 8,
+   "rate": 0.02
+  },
+  "weapons": [
+   {
+    "id": "bc-lance",
+    "name": "Heavy energy lance",
+    "type": "energy",
+    "reach": "long",
+    "shots": 2,
+    "damage": 900,
+    "cooldown": 8,
+    "pen": 0.55,
+    "accuracy": 0.8
+   },
+   {
+    "id": "bc-torpedoes",
+    "name": "Torpedo barrage",
+    "type": "energy",
+    "reach": "medium",
+    "shots": 10,
+    "damage": 160,
+    "cooldown": 7,
+    "pen": 0.2,
+    "accuracy": 0.85,
+    "missile": true
+   },
+   {
+    "id": "bc-batteries",
+    "name": "Plasma batteries",
+    "type": "energy",
+    "reach": "close",
+    "shots": 16,
+    "damage": 30,
+    "cooldown": 3,
+    "pen": 0,
+    "accuracy": 0.8
+   }
+  ]
+ },
+ {
+  "id": "sentinel",
+  "name": "Sentinel wing",
+  "faction": "forerunner",
+  "command": 1,
+  "hull": 700,
+  "shield": 900,
+  "armour": 10,
+  "speed": 2.0,
+  "prefer": "close",
+  "regen": {
+   "delay": 4,
+   "rate": 0.05
+  },
+  "weapons": [
+   {
+    "id": "sentinel-beam",
+    "name": "Sentinel beams",
+    "type": "energy",
+    "reach": "close",
+    "shots": 3,
+    "damage": 40,
+    "cooldown": 2,
+    "pen": 0.3,
+    "accuracy": 0.85
+   }
+  ]
+ },
+ {
+  "id": "infested-cruiser",
+  "name": "Infested cruiser",
+  "faction": "flood",
+  "command": 8,
+  "hull": 40000,
+  "shield": 0,
+  "armour": 30,
+  "speed": 0.9,
+  "prefer": "close",
+  "weapons": [
+   {
+    "id": "flood-spores",
+    "name": "Spore launchers",
+    "type": "explosive",
+    "reach": "medium",
+    "shots": 12,
+    "damage": 80,
+    "cooldown": 5,
+    "pen": 0.1,
+    "accuracy": 0.8,
+    "missile": true
+   },
+   {
+    "id": "flood-boarders",
+    "name": "Boarding swarm",
+    "type": "kinetic",
+    "reach": "close",
+    "shots": 20,
+    "damage": 45,
+    "cooldown": 2,
+    "pen": 0,
+    "accuracy": 0.85
+   }
+  ]
+ },
+ {
+  "id": "enforcer",
+  "name": "Sentinel Enforcer",
+  "faction": "forerunner",
+  "command": 20,
+  "hull": 60000,
+  "shield": 50000,
+  "armour": 90,
+  "speed": 1.0,
+  "prefer": "long",
+  "pd": 3,
+  "regen": {
+   "delay": 6,
+   "rate": 0.03
+  },
+  "weapons": [
+   {
+    "id": "enforcer-beam",
+    "name": "Enforcer beam",
+    "type": "energy",
+    "reach": "long",
+    "shots": 1,
+    "damage": 1400,
+    "cooldown": 9,
+    "pen": 0.7,
+    "accuracy": 0.85
+   },
+   {
+    "id": "enforcer-pulse",
+    "name": "Pulse array",
+    "type": "energy",
+    "reach": "medium",
+    "shots": 8,
+    "damage": 160,
+    "cooldown": 5,
+    "pen": 0.3,
+    "accuracy": 0.85
+   }
+  ]
+ },
+ {
+  "id": "flood-hulk",
+  "name": "Gravemind hulk",
+  "faction": "flood",
+  "command": 40,
+  "hull": 220000,
+  "shield": 0,
+  "armour": 70,
+  "speed": 0.6,
+  "prefer": "close",
+  "pd": 2,
+  "weapons": [
+   {
+    "id": "hulk-tentacles",
+    "name": "Tendril lash",
+    "type": "kinetic",
+    "reach": "close",
+    "shots": 24,
+    "damage": 110,
+    "cooldown": 3,
+    "pen": 0.1,
+    "accuracy": 0.85
+   },
+   {
+    "id": "hulk-spores",
+    "name": "Spore storm",
+    "type": "explosive",
+    "reach": "medium",
+    "shots": 16,
+    "damage": 120,
+    "cooldown": 6,
+    "pen": 0.1,
+    "accuracy": 0.8,
+    "missile": true
+   }
+  ]
+ },
+ {
+  "id": "supercarrier",
+  "name": "Supercarrier",
+  "faction": "covenant",
+  "command": 60,
+  "hull": 400000,
+  "shield": 380000,
+  "armour": 120,
+  "speed": 0.5,
+  "prefer": "long",
+  "pd": 10,
+  "regen": {
+   "delay": 10,
+   "rate": 0.015
+  },
+  "weapons": [
+   {
+    "id": "super-lance",
+    "name": "Planet-cracker lance",
+    "type": "energy",
+    "reach": "long",
+    "shots": 3,
+    "damage": 1500,
+    "cooldown": 8,
+    "pen": 0.6,
+    "accuracy": 0.8
+   },
+   {
+    "id": "super-torpedoes",
+    "name": "Plasma torpedo wall",
+    "type": "energy",
+    "reach": "medium",
+    "shots": 14,
+    "damage": 230,
+    "cooldown": 7,
+    "pen": 0.2,
+    "accuracy": 0.85,
+    "missile": true
+   },
+   {
+    "id": "super-batteries",
+    "name": "Defence batteries",
+    "type": "energy",
+    "reach": "close",
+    "shots": 20,
+    "damage": 45,
+    "cooldown": 3,
+    "pen": 0,
+    "accuracy": 0.8
+   }
+  ]
+ }
+]
