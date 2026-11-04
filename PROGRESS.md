@@ -163,3 +163,7 @@ the design doc's build log. Combat and fleet numbers are unchanged in Phase 3.
 
 ## Ideas for after 1.0
 Rescue and Quarantine missions, a Salvage sink that scales into Theatres 4-5, Ti storage warning for the heavy cruiser, a long-run bot that can play Theatres 3-5, playtest-driven balance of Theatres 3-5.
+
+## GitHub Pages (post 1.0)
+`.github/workflows/pages.yml` and `.gitignore` added; `vite.config.ts` has `base: './'`; index.html has Apple web-app and theme-color meta;
+theme.css ends with a touch section (`touch-action: manipulation`, 16px fields on phones). README has the deploy steps.

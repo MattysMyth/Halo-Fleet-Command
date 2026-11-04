@@ -5,6 +5,8 @@ import { viteSingleFile } from 'vite-plugin-singlefile';
 // The game ships as ONE self-contained HTML file (viteSingleFile inlines JS and CSS),
 // so it can be hosted anywhere static, including as a published artifact.
 export default defineConfig({
+  // Relative base, so the page also works from a sub-path such as https://user.github.io/repo/.
+  base: './',
   plugins: [preact(), viteSingleFile()],
   build: {
     target: 'es2022',

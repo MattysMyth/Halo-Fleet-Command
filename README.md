@@ -56,3 +56,13 @@ Engaged player: first ship at about 8 minutes, Operations open at 8 minutes, who
 about 57 minutes (44, 33 and 31 minutes for the next three). Moderate player: first Redeploy about 66 minutes. Casual
 (checks in every 10 minutes): about 2 h 8 m. Marines add roughly 5 to 20% of an engaged run's Requisition with two squads.
 `npm run balance -- --marines 0` plays without them; `npx tsx tools/odds-probe.ts` prints squad odds by loadout.
+
+## Deploying to GitHub Pages
+
+The build is one self-contained `dist/index.html`. Push the project to a GitHub repository whose default branch is `main`, then in
+Settings > Pages set Source to "GitHub Actions". `.github/workflows/pages.yml` typechecks, tests, builds and publishes on every push to
+`main` (or run it by hand from the Actions tab). The game appears at `https://<user>.github.io/<repo>/`. Saves are stored per site address
+in the browser, so use Settings > Export save to move one between the artifact version and the Pages site.
+
+iOS notes: `touch-action: manipulation` on every element removes double-tap zoom (pinch zoom still works), form fields are 16px on phones so
+Safari does not zoom on focus, and the page can be added to the Home Screen for a full-screen app.
